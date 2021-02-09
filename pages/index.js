@@ -1,65 +1,85 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
+import {Component} from 'react';
+import Head from 'next/head';
+import Project from '../components/project';
+
+const DEVELOPER = 'alexmercerind';
+
+
+export default class MainPage extends Component {
+  render() {
+    return <body>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Hitesh Kumar Saini (alexmercerind)</title>
+        <link rel='preconnect' href='https://fonts.gstatic.com'></link>
+        <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500&display=swap' rel='stylesheet'></link>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+      <Project
+      maintainer={DEVELOPER}
+      repository={'harmonoid'}
+      links = {{
+        'Website': 'https://harmonoid.github.io',
+        'Downloads': 'https://harmonoid.github.io',
+        'Discord Server': 'https://discord.gg/mRxH9zYkGy',
+      }}
+      images={[
+        'harmonoid/0.png',
+        'harmonoid/1.png',
+        'harmonoid/2.png',
+      ]}
+      achievements={[
+        'Sorts & updates music in albums, artists, playlists etc. on filesystem while adding or deleting songs based on media tags.',
+        'Has queue based downloads & supports native notifications.',
+        'Uses Flutter UI toolkit.',
+        'Uses Python backend made in FastAPI & deployed on Heroku.',
+      ]}
+      />
+      <Project
+      maintainer={DEVELOPER}
+      repository={'youtube-search-python'}
+      links = {{
+        'PyPI': 'https://github.com/alexmercerind',
+      }}
+      images={[
+        'youtube-search-python/0.png',
+      ]}
+      achievements={[
+        'Over 500k downloads on PyPI.',
+        'Searches & gets information from YouTube without official rate limiting API.',
+        'Has asynchronous support.',
+        'Added additional features other than searching after requests from dependents. First project to reach 100 stars.'
+      ]}
+      />
+      <Project
+      maintainer={DEVELOPER}
+      repository={'flutter_audio_desktop'}
+      links = {{
+        'pub.dev': 'https://pub.dev/packages/flutter_audio_desktop',
+        'miniaudio': 'https://github.com/mackron/miniaudio',
+        'Medium Article': 'https://medium.com/flutter/announcing-flutter-windows-alpha-33982cd0f433',
+      }}
+      images={[
+        'flutter_audio_desktop/0.png',
+      ]}
+      achievements={[
+        'Got mentioned in the official Flutter medium article about Flutter for Windows.',
+        'Very precisely implements material design & animation guidelines.',
+        'One of the very first plugins ever made for Flutter Windows.',
+        'Uses miniaudio in C++ for low level cross platform audio playback APIs.'
+      ]}
+      />
+      <Project
+      maintainer={DEVELOPER}
+      repository={'media_metadata_retriever'}
+      links = {{
+        'pub.dev': 'https://pub.dev/packages/media_metadata_retriever',
+      }}
+      achievements={[
+        'Gets metadata of media files from filesystem for Flutter apps.',
+        'Works on Linux & Windows.',
+        'Uses MediaMetadataRetriever on Android & lib-mediainfo on Linux.'
+      ]}
+      />
+    </body>
+  }
 }
