@@ -40,14 +40,9 @@ export default function ProjectTile({maintainer, repository, images}) {
       {imageElements}
     </div>
     <div className={styles.CardContent}>
-      <div className={styles.LanguageBar}>
-        <div className={styles.Icon}>
-          <RepoIcon size='medium' />
-        </div>
-        <a href={repositoryJSON?.html_url} target={'__blank'} className={styles.Title}>
-          {repository}
-        </a>
-      </div>
+      <a href={repositoryJSON?.html_url} target={'__blank'} className={styles.Title}>
+        {repository}
+      </a>
       <div className={styles.IconBar}>
         <div className={styles.IconContainer}>
           <div className={styles.Icon}>
