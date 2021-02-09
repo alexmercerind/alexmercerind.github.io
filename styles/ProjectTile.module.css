@@ -1,0 +1,132 @@
+.Card {
+  max-width: 720px;
+  width: 100%;
+  margin: 12px 0px 12px 0px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--card-color);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.Card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.CardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  margin-top: 12px;
+  padding: 12px 12px 12px 12px;
+}
+
+.Images {
+  display: flex;
+  flex-direction: row;
+}
+
+.Title {
+  font-size: 28px;
+  font-weight: var(--font-B);
+  font-style: none;
+  color: var(--accent-color);
+  font-family: var(--font-family);
+  text-decoration: none;
+}
+
+.SubTitle {
+  font-size: 12px;
+  font-weight: var(--font-A);
+  margin: 8px 0px 8px 0px;
+  color: rgba(0, 0, 0, 0.67);
+  font-family: var(--font-family);
+}
+
+.IconBar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.Icon {
+  opacity: 0.45;
+  transform: scale(1.2);
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.IconLabel {
+  font-size: 14px;
+  margin-right: 12px;
+  font-weight: var(--font-A);
+  color: rgba(0, 0, 0, 0.67);
+  font-family: var(--font-family);
+}
+
+.IconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.Description {
+  font-size: 14px;
+  font-weight: var(--font-A);
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0px 0px 8px 0px;
+  font-family: var(--font-family);
+}
+
+.LanguageBar {
+  margin: 8px 0px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.Button {
+  color: var(--accent-color);
+  font-size: 14px;
+  font-weight: var(--font-A);
+  text-decoration: none;
+  padding: 8px;
+  margin-left: 8px;
+  border-radius: 4px;
+  width: min-content;
+  transition-duration: 140ms;
+  user-select: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+  transition-duration: 400ms;
+}
+
+.Button:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.Button:active {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.ButtonBar {
+  display: flex;
+  align-self: flex-end;
+  width: max-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+
+.Divider {
+  height: 1px;
+  width: 100%;
+  margin: 12px 0px 12px 0px;
+  background-color: rgba(0, 0, 0, 0.12);
+}

@@ -1,16 +1,16 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+:root {
+  --accent-color: #6200EA;
+  --background-color: #F5F5F5;
+  --card-color: #FFFFFF;
+  --font-A: normal;
+  --font-B: 300;
+  --zoom: 1.1;
+  --font-family: 'Roboto', sans-serif;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  background-color: var(--background-color);
+  zoom: var(--zoom);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
