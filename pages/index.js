@@ -1,25 +1,27 @@
-
-import {Component} from 'react';
 import Head from 'next/head';
+import AppBar from '../components/appbar';
+import Profile from '../components/profile';
 import Project from '../components/project';
 
 const DEVELOPER = 'alexmercerind';
+const NAME = 'Hitesh Kumar Saini';
 
-
-export default class MainPage extends Component {
-  render() {
-    return <body>
+export default function MainPage() {
+  return <div>
+    <AppBar title={DEVELOPER} subtitle={NAME} />
+    <body>
       <Head>
         <title>Hitesh Kumar Saini (alexmercerind)</title>
         <link rel='preconnect' href='https://fonts.gstatic.com'></link>
         <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500&display=swap' rel='stylesheet'></link>
       </Head>
+      <Profile />
       <Project
       maintainer={DEVELOPER}
       repository={'harmonoid'}
       links = {{
         'Website': 'https://harmonoid.github.io',
-        'Downloads': 'https://harmonoid.github.io',
+        'Download': 'https://harmonoid.github.io',
         'Discord Server': 'https://discord.gg/mRxH9zYkGy',
       }}
       images={[
@@ -81,5 +83,8 @@ export default class MainPage extends Component {
       ]}
       />
     </body>
-  }
+    <footer>
+      This website is made with <a href='https://nextjs.org' target='__blank'>Next.js</a> by <a href='https://github.com/alexmercerind' target='__blank'>alexmercerind</a>.
+    </footer>
+  </div>
 }
