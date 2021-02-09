@@ -1,0 +1,82 @@
+.Picture {
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 12px;
+}
+
+.Image {
+  height: 128px;
+  width: 128px;
+}
+
+.Contacts {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.Divider {
+  height: 1px;
+  width: calc(100% - 24px);
+  margin: 12px 12px 12px 12px;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.ProfileCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Profile {
+  width: 100%;
+  max-width: 720px;
+  margin: 12px 0px 12px 0px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--card-color);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.Title {
+  font-size: 32px;
+  font-weight: var(--font-B);
+  margin-left: 12px;
+  font-style: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: var(--font-family);
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.SubHeader {
+  font-size: 20px;
+  font-weight: var(--font-A);
+  margin-left: 12px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: var(--font-family);
+}
+
+.Description {
+  font-size: 16px;
+  margin: 0px 0px 8px 0px;
+  margin-right: 12px;
+  font-weight: var(--font-A);
+  margin-left: 12px;
+  color: rgba(0, 0, 0, 0.67);
+  font-family: var(--font-family);
+}
+

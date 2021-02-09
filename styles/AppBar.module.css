@@ -1,0 +1,51 @@
+
+.AppBar {
+  width: calc(100% - 22px);
+  height: 64px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-left: 24px;
+  background-color: rgba(256, 256, 256, 1.0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.Title {
+  font-size: 24px;
+  margin: 8px 0px 0px 0px;
+  font-weight: var(--font-B);
+  color: var(--accent-color);
+  font-family: var(--font-family);
+}
+
+.SubTitle {
+  font-size: 16px;
+  font-weight: var(--font-A);
+  margin: 0px 0px 0px 0px;
+  color: rgba(0, 0, 0, 0.67);
+  font-family: var(--font-family);
+}
+
+.Icon {
+  opacity: 0.87;
+  transform: scale(2.4);
+  margin-right: 8px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.AppBarContent {
+  width: calc(100% - 22px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AppBarTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: flex-start;
+}
