@@ -20,8 +20,7 @@ export default function MainPage() {
       maintainer={DEVELOPER}
       repository={'harmonoid'}
       links = {{
-        'Website': 'https://harmonoid.github.io',
-        'Download': 'https://harmonoid.github.io',
+        'Download': 'https://github.com/alexmercerind/harmonoid',
         'Discord Server': 'https://discord.gg/mRxH9zYkGy',
       }}
       images={[
@@ -30,10 +29,11 @@ export default function MainPage() {
         'harmonoid/2.png',
       ]}
       achievements={[
-        'Sorts & updates music in albums, artists, playlists etc. on filesystem while adding or deleting songs based on media tags.',
-        'Has queue based downloads & supports native notifications.',
+        'Sorts & updates music into albums, artists etc. on deletion or addition of music.',
+        'Plays & shows files on the filesystem. Supports creating playlists.'
+        'Reads media metadata & builds collection.',
+        'Has native media notifications & queue management.',
         'Uses Flutter UI toolkit.',
-        'Uses Python backend made in FastAPI & deployed on Heroku.',
       ]}
       />
       <Project
