@@ -18,10 +18,30 @@ export default function MainPage() {
       <Profile />
       <Project
       maintainer={DEVELOPER}
+      repository={'dart_vlc'}
+      links = {{
+        'pub.dev': 'https://pub.dev/packages/dart_vlc',
+        'videoLAN retweet': 'https://twitter.com/videolan/status/1371774126080286722',
+        'libVLC++': 'https://github.com/videolan/libvlcpp',
+      }}
+      images={[
+        'dart_vlc/0.png',
+        'dart_vlc/1.png',
+      ]}
+      achievements={[
+        "World's first media playback library for Flutter and Dart apps on Windows & Linux.",
+        'Has C++ based wrapper around libVLC++ & libVLC.',
+        'Uses Platform Channels for Flutter & FFI for plain Dart apps.',
+        'Retweed by official videoLAN Twitter account.',
+        'Sends RAW video frame buffer to render using RawImage & show a video inside Widget tree.',
+      ]}
+      />
+      <Project
+      maintainer={DEVELOPER}
       repository={'harmonoid'}
       links = {{
         'Download': 'https://github.com/alexmercerind/harmonoid',
-        'Discord Server': 'https://discord.gg/mRxH9zYkGy',
+        'Google Play Store': 'https://play.google.com/store/apps/details?id=com.alexmercerind.harmonoid',
       }}
       images={[
         'harmonoid/0.png',
@@ -29,11 +49,12 @@ export default function MainPage() {
         'harmonoid/2.png',
       ]}
       achievements={[
-        'Sorts & updates music into albums, artists etc. on deletion or addition of music.',
-        'Plays & shows files on the filesystem. Supports creating playlists.'
-        'Reads media metadata & builds collection.',
-        'Has native media notifications & queue management.',
+        'Indexes, arranges, sorts & updates music into albums, artists etc. on deletion or addition of music, based on metadata tags.',
+        'Plays & shows files on the filesystem. Supports creating playlists.',
+        'Uses Provider state management.',
+        'Has native media notifications.',
         'Uses Flutter UI toolkit.',
+        'Has FastAPI based backend.',
       ]}
       />
       <Project
@@ -46,17 +67,17 @@ export default function MainPage() {
         'youtube-search-python/0.png',
       ]}
       achievements={[
-        'Over 500k downloads on PyPI.',
+        'Over 2M downloads on PyPI.',
         'Searches & gets information from YouTube without official rate limiting API.',
         'Has asynchronous support.',
-        'Added additional features other than searching after requests from dependents. First project to reach 100 stars.'
+        'Added additional features other than searching after requests from dependents. First project to reach 100 stars.',
       ]}
       />
       <Project
       maintainer={DEVELOPER}
       repository={'flutter_audio_desktop'}
       links = {{
-        'pub.dev': 'https://pub.dev/packages/flutter_audio_desktop',
+        'dart_vlc': 'https://pub.dev/packages/dart_vlc',
         'miniaudio': 'https://github.com/mackron/miniaudio',
         'Medium Article': 'https://medium.com/flutter/announcing-flutter-windows-alpha-33982cd0f433',
       }}
@@ -64,21 +85,25 @@ export default function MainPage() {
         'flutter_audio_desktop/0.png',
       ]}
       achievements={[
+        'Superseded by dart_vlc, based on libVLC.',
         'Got mentioned in the official Flutter medium article about Flutter for Windows.',
-        'Very precisely implements material design & animation guidelines.',
         'One of the very first plugins ever made for Flutter Windows.',
         'Uses miniaudio in C++ for low level cross platform audio playback APIs.'
       ]}
       />
       <Project
       maintainer={DEVELOPER}
-      repository={'media_metadata_retriever'}
+      repository={'flutter_media_metadata'}
       links = {{
-        'pub.dev': 'https://pub.dev/packages/media_metadata_retriever',
+        'pub.dev': 'https://pub.dev/packages/flutter_media_metadata',
       }}
+      images={[
+        'flutter_media_metadata/0.png',
+        'flutter_media_metadata/1.png',
+      ]}
       achievements={[
         'Gets metadata of media files from filesystem for Flutter apps.',
-        'Works on Linux & Windows.',
+        'Works on Linux & Android.',
         'Uses MediaMetadataRetriever on Android & lib-mediainfo on Linux.'
       ]}
       />

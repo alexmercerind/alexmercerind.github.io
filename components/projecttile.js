@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {StarIcon, RepoForkedIcon, EyeIcon, RepoIcon} from '@primer/octicons-react';
+import {StarIcon, RepoForkedIcon, EyeIcon} from '@primer/octicons-react';
 import styles from '../styles/ProjectTile.module.css';
 
 const LANGUAGE_COLORS = {
