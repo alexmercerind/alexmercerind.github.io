@@ -39,7 +39,7 @@
 
 .Profile {
   width: 100%;
-  max-width: 720px;
+  max-width: 960px;
   margin: 12px 0px 12px 0px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -56,16 +56,16 @@
   font-style: none;
   color: var(--title-color);
   font-family: var(--font-family);
-  text-decoration: none;
   margin-bottom: 12px;
 }
 
 .SubHeader {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: var(--font-A);
   margin-left: 12px;
   margin-top: 16px;
   margin-bottom: 16px;
+  text-decoration: none;
   color: var(--title-color);
   font-family: var(--font-family);
 }

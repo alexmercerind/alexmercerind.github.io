@@ -1,5 +1,5 @@
 .Card {
-  max-width: 720px;
+  max-width: 960px;
   width: 100%;
   margin: 12px 0px 12px 0px;
   border-radius: 4px;
@@ -32,8 +32,10 @@
   font-style: none;
   color: var(--accent-color);
   font-family: var(--font-family);
-  text-decoration: none;
-  margin-bottom: 12px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+  margin-bottom: 24px;
 }
 
 .SubTitle {

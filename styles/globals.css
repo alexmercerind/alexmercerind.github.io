@@ -1,13 +1,13 @@
 :root {
-  --accent-color: #7C4DFF;
+  --accent-color: #A7FFEB;
   --background-color: #121212;
-  --card-color: rgba(255, 255, 255, 0.12);
+  --card-color: rgba(255, 255, 255, 0.08);
   --font-A: normal;
   --font-B: 300;
   --zoom: 1.0;
-  --font-family: 'Roboto', sans-serif;
-  --title-color: rgba(255, 255, 255, 0.87);
-  --subtitle-color: rgba(255, 255, 255, 0.67);
+  --font-family: 'Roboto Mono', monospace;
+  --title-color: rgba(255, 255, 255, 1.0);
+  --subtitle-color: rgba(255, 255, 255, 0.87);
   background-color: var(--background-color);
   zoom: var(--zoom);
 }
@@ -37,7 +37,7 @@ div {
 footer {
   font-family: var(--font-family);
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.87);
+  color: var(--subtitle-color);
   border-top: 1px solid rgba(0, 0, 0, 0.12);
   width: calc(100vw - 22px);
   padding-top: 12px;
@@ -45,4 +45,8 @@ footer {
 
 a {
   color: var(--accent-color);
+  height: 24px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
