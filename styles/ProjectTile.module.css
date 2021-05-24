@@ -40,7 +40,7 @@
   font-size: 12px;
   font-weight: var(--font-A);
   margin: 8px 0px 8px 0px;
-  color: rgba(0, 0, 0, 0.67);
+  color: var(--subtitle-color);
   font-family: var(--font-family);
 }
 
@@ -64,7 +64,7 @@
   font-size: 16px;
   margin-right: 12px;
   font-weight: var(--font-A);
-  color: rgba(0, 0, 0, 0.67);
+  color: var(--subtitle-color);
   font-family: var(--font-family);
 }
 
@@ -78,7 +78,7 @@
 .Description {
   font-size: 16px;
   font-weight: var(--font-A);
-  color: rgba(0, 0, 0, 0.87);
+  color: var(--subtitle-color);
   margin: 0px 0px 8px 0px;
   font-family: var(--font-family);
 }

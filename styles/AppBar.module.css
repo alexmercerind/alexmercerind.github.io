@@ -1,11 +1,11 @@
 
 .AppBar {
   width: calc(100vw + 24px);
-  height: 64px;
+  height: 72px;
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: rgba(256, 256, 256, 1.0);
+  background-color: var(--card-color);
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -21,21 +21,27 @@
   font-size: 16px;
   padding: 0px 0px 0px 24px;
   font-weight: var(--font-A);
-  color: rgba(0, 0, 0, 0.67);
+  color: var(--title-color);
   font-family: var(--font-family);
 }
 
 .Icon {
   opacity: 0.87;
-  transform: scale(2.4);
-  color: black;
+  color: white;
   display: flex;
   align-items: center;
+  height: 64px;
+  width: 64px;
   justify-content: flex-start;
 }
 
+.GitHubIcon {
+  transform: scale(2.4);
+  transform-origin: center;
+}
+
 .AppBarContent {
-  width: calc(100% - 24px);
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;

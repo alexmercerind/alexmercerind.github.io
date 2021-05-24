@@ -1,5 +1,5 @@
 import styles from '../styles/AppBar.module.css';
-import {MarkGithubIcon} from '@primer/octicons-react';
+import { MarkGithubIcon } from '@primer/octicons-react';
 
 export default function AppBar({title, subtitle}) {
   return <nav className={styles.AppBar}>
@@ -9,7 +9,7 @@ export default function AppBar({title, subtitle}) {
         <div className={styles.SubTitle}>{subtitle}</div>
       </div>
       <a target={'__blank'} className={styles.Icon} href={`https://github.com/${title}`}>
-        <MarkGithubIcon size='small' />
+        <MarkGithubIcon className={styles.GitHubIcon} size='small' />
       </a>
     </div>
   </nav>

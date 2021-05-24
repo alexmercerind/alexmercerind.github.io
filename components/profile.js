@@ -16,24 +16,30 @@ export default function Profile() {
       <div className={styles.Description}>This is my personal website with sole purpose of being a place, to show all my open source projects.</div>
       <div>
         <div>
-          <div className={styles.SubHeader}>Used Technologies</div>
+          <div className={styles.SubHeader}>I'm Skilled In</div>
           <div className={styles.Description}>Flutter (Apps &amp; Plugins)</div>
-          <div className={styles.Description}>Provider, Riverpod</div>
-          <div className={styles.Description}>React.js, Next.js</div>
+          <div className={styles.Description}>Provider, GetX, Riverpod</div>
+          <div className={styles.Description}>React.js, React Router, Next.js</div>
           <div className={styles.Description}>HTML/JS/CSS</div>
-          <div className={styles.Description}>Flask, FastAPI</div>
           <div className={styles.Description}>Node.js, express.js</div>
-          <div className={styles.Description}>Git, GitHub, GitLab</div>
-          <div className={styles.Description}>Visual Studio Code, Visual Studio, Sublime</div>
-          <div className={styles.Description}>Asynchronous programming in C++, Python, C# &amp; JS.</div>
+          <div className={styles.Description}>Git</div>
+          <div className={styles.Description}>Flask, FastAPI</div>
+          <div className={styles.Description}>Visual Studio Code, Visual Studio, Android Studio, Sublime</div>
+          <div className={styles.Description}>Asynchronous &amp; object oriented programming in C++, Python &amp; JS.</div>
         </div>
         <div>
-          <div className={styles.SubHeader}>Programming Languages</div>
+          <div className={styles.SubHeader}>I Know</div>
           <div className={styles.Description}>C++</div>
-          <div className={styles.Description}>Python</div>
-          <div className={styles.Description}>JavaScript</div>
           <div className={styles.Description}>Dart</div>
-          <div className={styles.Description}>C#</div>
+          <div className={styles.Description}>Python</div>
+          <div className={styles.Description}>JavaScript/TypeScript</div>
+        </div>
+        <div>
+          <div className={styles.SubHeader}>I Have Worked At</div>
+          <div className={styles.Description}>C++</div>
+          <div className={styles.Description}>Dart</div>
+          <div className={styles.Description}>Python</div>
+          <div className={styles.Description}>JavaScript/TypeScript</div>
         </div>
       </div>
       <div className={styles.Divider} />
