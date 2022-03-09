@@ -1,0 +1,230 @@
+.card {
+  width: calc(100% - 24px);
+  max-width: 960px;
+  margin: 0px 16px 0px 16px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+html[data-theme="dark"] .card {
+  width: calc(100% - 24px);
+  max-width: 960px;
+  margin: 0px 16px 0px 16px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.cardContent {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px 16px 16px 16px;
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.images {
+  flex: 3;
+  z-index: -1000;
+  position: relative;
+  border-right: 1px solid #51555d;
+  padding: 4px;
+}
+
+.image {
+  height: 480px;
+}
+
+.imageNext {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-duration: 500ms;
+  background-color: #323740;
+  opacity: 0;
+}
+
+.titleBar {
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+  background-color: var(--ifm-color-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.titleBarContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleBarIcon {
+  color: #fff;
+  fill: #fff;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.titleBarIcon:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.carouselIcon {
+  color: #1c1e21;
+}
+
+html[data-theme="dark"] .carouselIcon {
+  color: #fff;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 12px;
+  font-family: var(--serif-font);
+  color: #fff;
+  font-weight: 600;
+  font-style: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+}
+
+.title:hover {
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 12px;
+  margin: 8px 0px 8px 0px;
+}
+
+.iconBar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.icon {
+  opacity: 0.45;
+  transform: scale(1.4);
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.iconLabel {
+  font-size: 15px;
+  margin-right: 12px;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.description {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.languageBar {
+  margin: 8px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.button {
+  font-size: 15px;
+  text-decoration: none;
+  padding: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: 8px;
+  border-radius: 4px;
+  width: min-content;
+  transition-duration: 140ms;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 100ms;
+}
+
+.button:hover {
+  background-color: rgba(256, 256, 256, 0.1);
+}
+
+.button:active {
+  background-color: rgba(256, 256, 256, 0.2);
+}
+
+.imageChild {
+  object-fit: contain;
+  width: 100vw;
+  height: 100%;
+}
+
+.buttonBar {
+  display: flex;
+  align-self: flex-end;
+  width: max-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: #ddd;
+}
+
+html[data-theme="dark"] .divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width: 628px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .image {
+    width: calc(100vw - 32px);
+    height: auto;
+    object-fit: contain;
+  }
+}
