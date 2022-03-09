@@ -14,7 +14,8 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "alexmercerind",
-
+  projectName: "alexmercerind.github.io",
+  deploymentBranch: "gh-pages",
   presets: [
     [
       "classic",
@@ -41,6 +42,12 @@ const config = {
   themeConfig:
     /** @type {import("@docusaurus/preset-classic").ThemeConfig} */
     ({
+      metadata: [
+        {
+          name: 'keywords',
+          content: 'software, software-development, programming, flutter, react, alexmercerind',
+        }
+      ],
       colorMode: {
         defaultMode: "light",
         disableSwitch: false,
@@ -48,10 +55,10 @@ const config = {
       },
       navbar: {
         title: "alexmercerind",
-        logo: {
-          alt: "alexmercerind",
-          src: "img/alexmercerind.png",
-        },
+        // logo: {
+        //   alt: "alexmercerind",
+        //   src: "img/alexmercerind.png",
+        // },
         items: [
           // {
           //   type: "doc",
