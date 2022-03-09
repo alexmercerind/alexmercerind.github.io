@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require("prism-react-renderer/themes/vsDark");
+const darkCodeTheme = require("prism-react-renderer/themes/vsDark");
 
 /** @type {import("@docusaurus/types").Config} */
 const config = {
@@ -22,15 +22,12 @@ const config = {
       /** @type {import("@docusaurus/preset-classic").Options} */
       ({
         docs: {
+          breadcrumbs: false,
+          sidebarCollapsed: true,
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl: "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -48,6 +45,10 @@ const config = {
           content: 'software, software-development, programming, flutter, react, alexmercerind',
         }
       ],
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 5,
+      },
       colorMode: {
         defaultMode: "light",
         disableSwitch: false,
@@ -60,12 +61,12 @@ const config = {
         //   src: "img/alexmercerind.png",
         // },
         items: [
-          // {
-          //   type: "doc",
-          //   docId: "intro",
-          //   position: "left",
-          //   label: "Tutorial",
-          // },
+          {
+            type: "doc",
+            docId: "dart_vlc",
+            position: "left",
+            label: "Docs",
+          },
           // {
           //   to: "/blog",
           //   label: "Blog",
@@ -126,6 +127,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Hitesh Kumar Saini. Built with React.js & Docusaurus.`,
       },
       prism: {
+        additionalLanguages: ['dart'],
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
