@@ -47,7 +47,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: "Hitesh Kumar Saini",
+        title: "alexmercerind",
         logo: {
           alt: "alexmercerind",
           src: "img/docusaurus.png",

@@ -14,9 +14,17 @@
   --ifm-color-primary-lighter: #7c4dff;
   --ifm-color-primary-lightest: #7c4dff;
   --ifm-code-font-size: 95%;
-  --ifm-navbar-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
-    0 3px 6px rgba(0, 0, 0, 0.23);
+  --ifm-navbar-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
   font-family: "Segoe UI", "Noto Sans", "Roboto", sans-serif;
+}
+
+.main-wrapper {
+  background-color: #efefef;
+}
+
+html[data-theme="dark"] .main-wrapper {
+  background-color: #121212;
 }
 
 html,
@@ -39,6 +47,14 @@ html[data-theme="dark"] {
   --ifm-color-primary-light: #b388ff;
   --ifm-color-primary-lighter: #b388ff;
   --ifm-color-primary-lightest: #b388ff;
+}
+
+svg {
+  color: #1c1e21;
+}
+
+html[data-theme="dark"] svg {
+  color: #fff;
 }
 
 .docusaurus-highlight-code-line {
