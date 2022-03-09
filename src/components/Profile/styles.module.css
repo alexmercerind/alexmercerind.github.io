@@ -61,7 +61,7 @@ html[data-theme="dark"] .profile {
   margin-top: 12px;
   margin-bottom: 16px;
   color: var(--ifm-color-primary);
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--serif-font);
 }
 
 html[data-theme="dark"] .subheader {
@@ -71,7 +71,7 @@ html[data-theme="dark"] .subheader {
   margin-top: 12px;
   margin-bottom: 16px;
   color: var(--ifm-color-primary);
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--serif-font);
 }
 
 .detail {

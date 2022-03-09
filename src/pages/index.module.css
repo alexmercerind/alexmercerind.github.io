@@ -58,7 +58,7 @@
   font-size: 36px;
   font-weight: 700;
   color: #fff;
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--serif-font);
 }
 
 .subtitle {
