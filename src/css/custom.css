@@ -14,7 +14,7 @@
   --ifm-color-primary-lighter: #7c4dff;
   --ifm-color-primary-lightest: #7c4dff;
   --ifm-code-font-size: 95%;
-  --serif-font: "Times New Roman", Times, serif;
+  --serif-font: "Roboto Condensed", sans-serif, serif;
   --ifm-navbar-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
     0 6px 6px rgba(0, 0, 0, 0.23);
   font-family: "Segoe UI", "Noto Sans", "Roboto", sans-serif;
