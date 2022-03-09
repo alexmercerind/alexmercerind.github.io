@@ -5,7 +5,6 @@ import styles from "./styles.module.css";
 export default function Profile() {
   const [opacity, setOpacity] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
   useEffect(() => {
-    document.getElementsByClassName('header-discord-link').item(0).onclick = () => alert('You may make me your friend on alexmercerind#3898. 😄');
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting === true) {
         let index = 0;
