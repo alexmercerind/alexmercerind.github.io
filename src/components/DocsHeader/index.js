@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { StarIcon, RepoForkedIcon, EyeIcon } from "@primer/octicons-react";
+import Head from "@docusaurus/Head";
 
 import styles from "./styles.module.css";
 
@@ -13,7 +14,10 @@ export default function DocsHeader({ repository, type }) {
 
   return (
     <div>
-      <a target="_blank" href={`https://github.com/${repository}`}>Star us on GitHub</a> • {type == "pub.dev" ? <a target="_blank" href={`https://pub.dev/packages/${repository.split('/')[repository.split('/').length - 1]}`} >Like us on pub.dev</a> : <a target="_blank" href={`https://pypi.org/project/${repository.split('/')[repository.split('/').length - 1]}`} >pypi.org</a>}
+      <Head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"></link>
+      </Head>
+      <a target="_blank" href={`https://github.com/${repository}`}>GitHub</a> • {type == "pub.dev" ? <a target="_blank" href={`https://pub.dev/packages/${repository.split('/')[repository.split('/').length - 1]}`} >pub.dev</a> : <a target="_blank" href={`https://pypi.org/project/${repository.split('/')[repository.split('/').length - 1]}`} >PyPI.org</a>} • Give us a ⭐ on GitHub.
       <div className={styles.iconBar}>
         <div className={styles.iconContainer}>
           <div className={styles.icon}>

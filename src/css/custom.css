@@ -20,6 +20,18 @@
   font-family: "Segoe UI", "Noto Sans", "Roboto", sans-serif;
 }
 
+h1 {
+  font-family: var(--serif-font);
+}
+
+h2 {
+  font-family: var(--serif-font);
+}
+
+h3 {
+  font-family: var(--serif-font);
+}
+
 .main-wrapper {
   background-color: #efefef;
 }
