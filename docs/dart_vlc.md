@@ -10,7 +10,7 @@ import DocsHeader from "../src/components/DocsHeader";
 
 # dart_vlc
 
-**Flutter media playback, broadcast, recording & chromecast library for Windows, Linux & macOS.**
+🎞️ Flutter media playback, broadcast, recording & chromecast library for Windows, Linux & macOS.
 
 <DocsHeader repository="alexmercerind/dart_vlc" type="pub.dev" />
 

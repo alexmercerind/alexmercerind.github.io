@@ -10,7 +10,7 @@ import DocsHeader from "../src/components/DocsHeader";
 
 # flutter_media_metadata
 
-**A Flutter plugin to read 🔖 metadata of 🎵 media files.**
+A Flutter plugin to read 🔖 metadata of 🎵 media files.
 
 <DocsHeader repository="alexmercerind/flutter_media_metadata" type="pub.dev" />
 
