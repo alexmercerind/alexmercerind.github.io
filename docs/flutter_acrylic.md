@@ -1,7 +1,7 @@
 ---
 id: flutter_acrylic
 title: flutter_acrylic
-image: https://github.com/alexmercerind/windows_taskbar/blob/assets/bMebejv57F.gif?raw=true
+image: https://github.com/alexmercerind/flutter_acrylic/blob/assets/mug8J4efWu.gif?raw=true
 description: Window acrylic, mica & transparency effects for Flutter on Windows, macOS & Linux.
 hide_title: true
 ---
@@ -9,8 +9,6 @@ hide_title: true
 # flutter_acrylic
 
 Window acrylic, mica & transparency effects for Flutter on Windows, macOS & Linux.
-
-### Jump to the [Tutorial](#tutorial) 🏁
 
 ## Installation
 

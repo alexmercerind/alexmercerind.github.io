@@ -10,8 +10,6 @@ hide_title: true
 
 Flutter plugin serving utilities related to Windows taskbar.
 
-### Jump to the [Tutorial](#tutorial) 🏁
-
 ## Install
 
 ```yaml
@@ -34,8 +32,6 @@ Checkout the example Flutter application [here](https://github.com/alexmercerind
 :::tip
 Don't forget to add the icons into your `pubspec.yaml`.
 :::
-
-![](https://docs.microsoft.com/en-us/windows/win32/shell/images/taskbar/thumbbar.png)
 
 ```dart
 WindowsTaskbar.setThumbnailToolbar(
@@ -68,15 +64,11 @@ WindowsTaskbar.resetThumbnailToolbar();
 
 ### Set progress mode
 
-![](https://docs.microsoft.com/en-us/windows/win32/uxguide/images/winenv-taskbar-image10.png)
-
 ```dart
 WindowsTaskbar.setProgressMode(TaskbarProgressMode.indeterminate);
 ```
 
 ### Set progress
-
-![](https://docs.microsoft.com/en-us/windows/win32/uxguide/images/winenv-taskbar-image10.png)
 
 ```dart
 WindowsTaskbar.setProgress(69, 100);
@@ -104,8 +96,6 @@ WindowsTaskbar.resetFlashTaskbarAppIcon();
 ```
 
 ### Set overlay icon (a badge)
-
-![](https://docs.microsoft.com/en-us/windows/win32/uxguide/images/winenv-taskbar-image15.png)
 
 ```dart
 WindowsTaskbar.setOverlayIcon(

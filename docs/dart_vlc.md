@@ -1,7 +1,7 @@
 ---
 id: dart_vlc
 title: dart_vlc
-image: ../img/dart_vlc/0.png
+image: /img/dart_vlc/0.webp
 description: Flutter media playback, broadcast, recording & chromecast library for Windows, Linux & macOS.
 hide_title: true
 ---
@@ -10,11 +10,9 @@ hide_title: true
 
 Flutter media playback, broadcast, recording & chromecast library for Windows, Linux & macOS.
 
-### Jump to the [Tutorial](#tutorial) 🏁
-
 <div style={{display: "flex", flexDirection: "row", width: "100%", overflowX: "scroll"}}>
-  <img style={{flex: 1}} src="../img/dart_vlc/0.png" />
-  <img style={{flex: 1}} src="../img/dart_vlc/1.png" />
+  <img style={{flex: 1}} src="/img/dart_vlc/0.webp" />
+  <img style={{flex: 1}} src="/img/dart_vlc/1.webp" />
 </div>
 
 ## Installation
