@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { StarIcon, RepoForkedIcon, EyeIcon } from "@primer/octicons-react";
 import { Carousel } from "react-responsive-carousel";
+import Link from "@docusaurus/Link";
 
 import "aos/dist/aos.css";
 import styles from "./styles.module.css";
@@ -20,7 +21,7 @@ const kLanguageColors = {
   "CSS": "#563D7C",
 }
 
-export default function ProjectTile({ index, maintainer, repository, images, extraLanguages }) {
+export default function ProjectTile({ type, index, maintainer, repository, images, extraLanguages }) {
   const [repositoryJSON, setRepositoryJSON] = useState(null);
   useEffect(async () => {
     let response = await fetch(`https://api.github.com/repos/${maintainer}/${repository}`);
@@ -31,10 +32,10 @@ export default function ProjectTile({ index, maintainer, repository, images, ext
   return <div data-aos={`fade-up-${index % 2 == 0 ? "right" : "left"}`} className={styles.card}>
     <div className={styles.titleBar}>
       <div className={styles.titleBarContent}>
-        <a href={repositoryJSON?.html_url} target={"__blank"} className={styles.title}>
+        {type == undefined ? <a href={repositoryJSON?.html_url} target={"__blank"} className={styles.title}>
           {repository}
-        </a>
-        <a href={repositoryJSON?.html_url} target={"__blank"} className={clsx("material-icons", "md-36", styles.titleBarIcon)}>open_in_new</a>
+        </a> : <Link className={styles.title} to={`/docs/${repository}`}>{repository}</Link>}
+        {type == undefined ? <a href={repositoryJSON?.html_url} target={"__blank"} className={clsx("material-icons", "md-36", styles.titleBarIcon)}>open_in_new</a> : <Link className={clsx("material-icons", "md-36", styles.titleBarIcon)} to={`/docs/${repository}`}>open_in_new</Link>}
       </div>
       <div className={styles.description}>
         {repositoryJSON?.description?.replace(/([\uE000-\uF8FF]|\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDDFF])/g, "")}
@@ -71,7 +72,7 @@ export default function ProjectTile({ index, maintainer, repository, images, ext
         {
           extraLanguages.map((language) => {
             return (
-              <div style={{ "display": "flex", "flexDirection": "row", "alignItems": "center" }}>
+              <div key={language} style={{ "display": "flex", "flexDirection": "row", "alignItems": "center" }}>
                 <div style={{ borderRadius: "50%", marginRight: 8, height: 16, width: 16, backgroundColor: kLanguageColors[language] }}></div>
                 <div className={styles.iconLabel}>
                   {language}

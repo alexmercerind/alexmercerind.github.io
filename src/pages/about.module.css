@@ -1,0 +1,141 @@
+.scrollable {
+  overflow-x: hidden;
+}
+
+.hero {
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.jump {
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 4px;
+}
+
+.jump:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+}
+
+.image {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.profile {
+  height: 204px;
+  width: 204px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--serif-font);
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #ffffffcc;
+}
+
+.tagline {
+  font-size: 15px;
+  color: #fff;
+  text-align: justify;
+}
+
+.infobar {
+  position: absolute;
+  top: 72px;
+  right: 8px;
+}
+
+.tooltip {
+  background-color: #ffffff22;
+  color: #fff;
+  height: 32px;
+  border-radius: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.projectsTitle {
+  position: absolute;
+  font-family: var(--serif-font);
+  font-size: 96px;
+  color: var(--ifm-color-primary);
+  transform: rotateZ(-90deg) translateX(-140%) translateY(50%);
+  transform-origin: 0px 0px;
+}
+
+@media screen and (max-width: 996px) {
+  .hero {
+    padding: 12px;
+    padding-top: 72px;
+  }
+
+  .profile {
+    height: 120px;
+    width: 120px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    display: none;
+  }
+
+  .row {
+    padding: 0px;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  .projectsTitle {
+    display: none;
+  }
+}
