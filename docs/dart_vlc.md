@@ -1,7 +1,7 @@
 ---
 id: dart_vlc
 title: dart_vlc
-image: /img/dart_vlc/0.webp
+image: https://alexmercerind.github.io/img/dart_vlc/0.webp
 description: Flutter media playback, broadcast, recording & chromecast library for Windows, Linux & macOS.
 hide_title: true
 ---
