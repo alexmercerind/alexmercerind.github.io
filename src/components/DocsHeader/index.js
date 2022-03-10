@@ -13,7 +13,7 @@ export default function DocsHeader({ repository, type }) {
 
   return (
     <div>
-      ⭐ <a href={`https://github.com/${repository}`}>Please give us a star on GitHub</a> | 👍 {type == "pub.dev" ? <a href={`https://pub.dev/packages/${repository.split('/')[repository.split('/').length - 1]}`} >Consider liking us on pub.dev</a> : <a href={`https://pypi.org/project/${repository.split('/')[repository.split('/').length - 1]}`} >pypi.org</a>}
+      <a href={`https://github.com/${repository}`}>Star us on GitHub</a> • {type == "pub.dev" ? <a href={`https://pub.dev/packages/${repository.split('/')[repository.split('/').length - 1]}`} >Like us on pub.dev</a> : <a href={`https://pypi.org/project/${repository.split('/')[repository.split('/').length - 1]}`} >pypi.org</a>}
       <div className={styles.iconBar}>
         <div className={styles.iconContainer}>
           <div className={styles.icon}>
