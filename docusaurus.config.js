@@ -71,9 +71,14 @@ const config = {
           //   position: "left",
           //   label: "Docs",
           // },
+          // {
+          //   to: "/docs",
+          //   label: "Docs",
+          //   position: "left",
+          // },
           {
-            to: "/docs",
-            label: "Docs",
+            to: "/about",
+            label: "About",
             position: "left",
           },
           {
