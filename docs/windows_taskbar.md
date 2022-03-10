@@ -20,7 +20,7 @@ Mention in your `pubspec.yaml`.
 
 ```yaml
 dependencies:
-  windows_taskbar: ^1.0.0
+  windows_taskbar: ^1.1.0
 ```
 
 <img width="600" src='https://github.com/alexmercerind/windows_taskbar/blob/assets/bMebejv57F.gif?raw=true'></img>
@@ -34,7 +34,7 @@ Checkout the example Flutter application [here](https://github.com/alexmercerind
 ### Set thumbnail toolbar
 
 :::tip
-Don't forget to add the icons into your `pubspec.yaml`.
+Don't forget to add the icons into your `pubspec.yaml` as assets.
 :::
 
 ```dart

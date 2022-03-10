@@ -53,13 +53,13 @@ It is a good idea to create `Player` instance as a class attribute where you can
 :::
 
 ```dart
-Player player = Player(id: 69420);
+final player = Player(id: 69420);
 ```
 
 For passing VLC CLI arguments, use `commandlineArguments` argument.
 
 ```dart
-Player player = Player(
+final player = Player(
   id: 69420,
   commandlineArguments: ['--no-video'],
 );
@@ -72,19 +72,13 @@ When playing a media from the assets, make sure to use the `Media.asset` constru
 :::
 
 ```dart
-Media.file(
-  File('C:/music.mp3')
-);
+Media.file(File('C:/music.mp3'));
 
-Media.asset(
-  'assets/audio/example.mp3'
-);
+Media.asset('assets/audio/example.mp3');
 
-Media.network(
-  'https://www.example.com/music.aac'
-);
+Media.network('https://www.example.com/music.aac');
 
-// clipping
+// Clip [Media].
 Media.network(
   'https://www.example.com/music.aac',
   startTime: Duration(seconds: 20),
@@ -110,7 +104,7 @@ final playlist = Playlist(
 ```dart
 player.open(
   Media.file(File('C:/music0.mp3')),
-  autoStart: true, // default
+  autoStart: true, // Default
 );
 ```
 
@@ -181,15 +175,13 @@ player.setRate(1.25);
 ```dart
 List<Device> devices = Devices.all;
 
-player.setDevice(
-  devices[0],
-);
+player.setDevice(devices[0]);
 ```
 
 ### Save the video snapshot
 
 ```dart
-player.takeSnapshot(file, 1920, 1080);
+player.takeSnapshot(File('C:/save/the/screenshot/here.JPG'), 1920, 1080);
 ```
 
 ### Show the video inside widget tree
@@ -198,19 +190,26 @@ Show `Video` in the `Widget` tree.
 
 ```dart
 class _MyAppState extends State<MyApp> {
-  Player player = Player(id: 0);
+  final Player player = Player(id: 0);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // Display [Video] like this.
       body: Video(
         player: player,
         height: 1920.0,
         width: 1080.0,
-        scale: 1.0, // default
-        showControls: false, // default
+        scale: 1.0, // Default
+        showControls: false, // Default
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    player.dispose();
+    super.dispose();
   }
 }
 ```
@@ -219,9 +218,9 @@ By default, `Video` widget's frame size will adapt to the currently playing vide
 To override this & define custom video frame size, pass `videoDimensions` argument while instanciating `Player` class as follows.
 
 ```dart
-Player player = Player(
+final player = Player(
   id: 69420,
-  videoDimensions: const VideoDimensions(640, 360)
+  videoDimensions: const VideoDimensions(640, 360),
 );
 ```
 
@@ -236,7 +235,7 @@ player.setUserAgent(userAgent);
 ### Retrieve metadata of media
 
 ```dart
-Media media = Media.network(
+final media = Media.network(
   'https://www.example.com/media.mp3',
   parse: true,
   timeout: Duration(seconds: 10),
@@ -314,14 +313,14 @@ player.bufferingProgressStream.listen(
 Create using preset.
 
 ```dart
-Equalizer equalizer = Equalizer.createMode(EqualizerMode.party);
+final equalizer = Equalizer.createMode(EqualizerMode.party);
 player.setEqualizer(equalizer);
 ```
 
 Create custom equalizer.
 
 ```dart
-Equalizer equalizer = Equalizer.createEmpty();
+final equalizer = Equalizer.createEmpty();
 equalizer.setPreAmp(10.0);
 equalizer.setBandAmp(31.25, -10.0);
 equalizer.setBandAmp(100.0, -10.0);
@@ -340,7 +339,7 @@ equalizer.bandAmps;
 Broadcasting to localhost.
 
 ```dart
-Broadcast broadcast = Broadcast.create(
+final broadcast = Broadcast.create(
   id: 0,
   media: Media.file(File('C:/video.mp4')),
   configuration: BroadcastConfiguration(
@@ -367,7 +366,7 @@ broadcast.dispose();
 Thanks to [@DomingoMG](https://github.com/DomingoMG) for adding `Record` and `Chromecast` classes.
 
 ```dart
-Record record = Record.create(
+final record = Record.create(
   id: 205,
   media: Media.network('https://www.example.com/streaming-media.MP3'),
   pathFile: '/home/alexmercerind/recording.MP3',
@@ -454,7 +453,7 @@ I preferred to do majority of handling in C++ itself, thus Dart code is minimal 
 
 This project might seem like a Flutter plugin, but it is based on FFI instead. [Here](https://github.com/alexmercerind/dart_vlc/tree/master/ffi) are the FFI bindings to [C++ wrapper](https://github.com/alexmercerind/dart_vlc/tree/master/dartvlc), which are shared by all platforms & same can be used in Dart CLI apps aswell.
 
-## Progress
+## Features
 
 Done
 
