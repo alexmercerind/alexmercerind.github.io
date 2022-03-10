@@ -10,11 +10,6 @@ hide_title: true
 
 Flutter media playback, broadcast, recording & chromecast library for Windows, Linux & macOS.
 
-<div style={{display: "flex", flexDirection: "row", width: "100%", overflowX: "scroll"}}>
-  <img style={{flex: 1}} src="/img/dart_vlc/0.webp" />
-  <img style={{flex: 1}} src="/img/dart_vlc/1.webp" />
-</div>
-
 ## Installation
 
 :::info
@@ -26,6 +21,11 @@ dependencies:
   ...
   dart_vlc: ^0.1.8
 ```
+
+<div style={{display: "flex", flexDirection: "row", width: "100%", overflowX: "scroll"}}>
+  <img style={{flex: 1}} src="/img/dart_vlc/0.webp" />
+  <img style={{flex: 1}} src="/img/dart_vlc/1.webp" />
+</div>
 
 ## Tutorial
 
@@ -66,23 +66,23 @@ When playing a media from the assets, make sure to use the `Media.asset` constru
 :::
 
 ```dart
-final media0 = Media.file(
+Media.file(
   File('C:/music.mp3')
 );
 
-final media1 = Media.asset(
+Media.asset(
   'assets/audio/example.mp3'
 );
 
-final media2 = Media.network(
+Media.network(
   'https://www.example.com/music.aac'
 );
 
 // clipping
-final media3 = Media.network(
+Media.network(
   'https://www.example.com/music.aac',
-  startTime: Duration(seconds: 20), // clip 20 seconds from start
-  stopTime: Duration(minute: 1), // clip 60 seconds from end
+  startTime: Duration(seconds: 20),
+  stopTime: Duration(minute: 1),
 );
 ```
 

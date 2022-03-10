@@ -17,13 +17,11 @@ dependencies:
   windows_taskbar: ^1.0.0
 ```
 
-## Demo
-
-Checkout the example Flutter application [here](https://github.com/alexmercerind/windows_taskbar/blob/master/example/lib/main.dart).
-
 <img width="600" src='https://github.com/alexmercerind/windows_taskbar/blob/assets/bMebejv57F.gif?raw=true'></img>
 <br />
 <img width="600" src='https://github.com/alexmercerind/windows_taskbar/blob/assets/OdzgD1yqEO.gif?raw=true'></img>
+
+Checkout the example Flutter application [here](https://github.com/alexmercerind/windows_taskbar/blob/master/example/lib/main.dart).
 
 ## Tutorial
 

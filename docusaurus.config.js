@@ -61,17 +61,17 @@ const config = {
         //   src: "img/alexmercerind.png",
         // },
         items: [
-          {
-            type: "doc",
-            docId: "dart_vlc",
-            position: "left",
-            label: "Docs",
-          },
           // {
-          //   to: "/blog",
-          //   label: "Blog",
+          //   type: "doc",
+          //   docId: "dart_vlc",
           //   position: "left",
+          //   label: "Docs",
           // },
+          {
+            to: "/docs",
+            label: "Docs",
+            position: "left",
+          },
           {
             href: "https://github.com/alexmercerind",
             className: "header-github-link",

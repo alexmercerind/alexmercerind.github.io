@@ -15,7 +15,7 @@ function HomepageHeader() {
       <div className={styles.header}>
         <div className={styles.infobar}>
           <div className={styles.tooltip}>Here for the libraries' docs? Go to the <Link className={styles.jump} to="/docs">Docs</Link>.</div>
-          <div className={styles.tooltip}>Here for the projects? Jump to the <a className={styles.jump} href="#">Projects</a>.</div>
+          <div className={styles.tooltip}>Here for the projects? Jump to the <a className={styles.jump} onClick={() => document.getElementById("projects").scrollIntoView({ "behavior": "smooth" })}>Projects</a>.</div>
         </div>
         <div className={styles.row}>
           <div className={styles.profile}>
@@ -28,7 +28,7 @@ function HomepageHeader() {
           </div>
         </div>
       </div>
-    </header>
+    </header >
   );
 }
 
@@ -59,6 +59,10 @@ export default function Home() {
           <HomepageHeader />
         </main>
         <Profile />
+        <br id="projects" />
+        <br />
+        <br />
+        <h1 className={styles.projectsTitle}>Projects</h1>
         <Project
           index={0}
           maintainer={"alexmercerind"}
@@ -246,6 +250,6 @@ export default function Home() {
           ]}
         />
       </div>
-    </Layout>
+    </Layout >
   );
 }

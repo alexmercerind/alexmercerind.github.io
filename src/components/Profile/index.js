@@ -64,7 +64,7 @@ export default function Profile() {
           <div className={styles.description}>Good knowledge of asynchronous &amp; object oriented programming.</div>
         </div>
       </div>
-      <div className={styles.profile}>
+      <div style={{ flex: 1 }} className={styles.profile}>
         <div className={styles.subheader}>Contacts</div>
         <div className={styles.description}>Want to hire me or have some feedback? Contact me below.</div>
         <div className={styles.contacts}>
@@ -121,6 +121,17 @@ export default function Profile() {
           <div className={styles.detail}><a target={"__blank"} href={"https://petgroomers.in"}>PetGroomers</a> • Intern • April 2021 - May 2021</div>
           <div className={styles.description}>Flutter developer • Worked on client app UI &amp; state management. Also worked on Firebase integration.</div>
         </div>
+      </div>
+      <div className={styles.profile}>
+        <div className={styles.subheader}>Fun Facts</div>
+        <ul>
+          <li className={styles.description}>I like writing C++. I enjoy writing native code in general.</li>
+          <li className={styles.description}>I think about design a lot. If it's UI isn't good, I won't use it.</li>
+          <li className={styles.description}>I want to work at in a good company one day.</li>
+          <li className={styles.description}>My first language was Python, which I learnt at school. Since then, I learnt everything myself by reading docs &amp; articles, watching videos and creating my own software &amp; documentations.</li>
+          <li className={styles.description}>Currently, I'm pursuing bachelor's in information technology at <a href="https://gbpuat.ac.in/">GBPUAT</a>.</li>
+          <li className={styles.description}>I'm 19 years old.</li>
+        </ul>
       </div>
     </div>
   </div >)
