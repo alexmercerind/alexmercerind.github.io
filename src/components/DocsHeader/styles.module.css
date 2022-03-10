@@ -1,0 +1,30 @@
+.iconBar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.icon {
+  opacity: 0.45;
+  transform: scale(1.4);
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.iconLabel {
+  display: inline;
+  font-size: 15px;
+  margin-right: 18px;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}

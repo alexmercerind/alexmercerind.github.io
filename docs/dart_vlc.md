@@ -6,15 +6,21 @@ description: Flutter media playback, broadcast, recording & chromecast library f
 hide_title: true
 ---
 
+import DocsHeader from "../src/components/DocsHeader";
+
 # dart_vlc
 
-Flutter media playback, broadcast, recording & chromecast library for Windows, Linux & macOS.
+**Flutter media playback, broadcast, recording & chromecast library for Windows, Linux & macOS.**
+
+<DocsHeader repository="alexmercerind/dart_vlc" type="pub.dev" />
 
 ## Installation
 
 :::info
 Feel free to open a [new issue](https://github.com/alexmercerind/dart_vlc/issues) or [discussion](https://github.com/alexmercerind/dart_vlc/discussions), if you found a bug, want new feature ✨ or need assistance.
 :::
+
+Mention in your `pubspec.yaml`.
 
 ```yaml
 dependencies:

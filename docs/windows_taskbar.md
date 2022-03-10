@@ -6,11 +6,17 @@ description: Flutter plugin serving utilities related to Windows taskbar.
 hide_title: true
 ---
 
+import DocsHeader from "../src/components/DocsHeader";
+
 # windows_taskbar
 
-Flutter plugin serving utilities related to Windows taskbar.
+**Flutter plugin serving utilities related to Windows taskbar.**
+
+<DocsHeader repository="alexmercerind/windows_taskbar" type="pub.dev" />
 
 ## Install
+
+Mention in your `pubspec.yaml`.
 
 ```yaml
 dependencies:

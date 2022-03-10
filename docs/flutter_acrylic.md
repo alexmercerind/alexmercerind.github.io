@@ -6,9 +6,13 @@ description: Window acrylic, mica & transparency effects for Flutter on Windows,
 hide_title: true
 ---
 
+import DocsHeader from "../src/components/DocsHeader";
+
 # flutter_acrylic
 
-Window acrylic, mica & transparency effects for Flutter on Windows, macOS & Linux.
+**Window acrylic, mica & transparency effects for Flutter on Windows, macOS & Linux.**
+
+<DocsHeader repository="alexmercerind/flutter_acrylic" type="pub.dev" />
 
 ## Installation
 
