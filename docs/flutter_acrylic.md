@@ -10,7 +10,7 @@ import DocsHeader from "../src/components/DocsHeader";
 
 # flutter_acrylic
 
-Flutter plugin serving utilities related to Windows taskbar. 💙
+Flutter library for window acrylic, mica & transparency effects (Windows, macOS & Linux). 💙
 
 <DocsHeader repository="alexmercerind/flutter_acrylic" type="pub.dev" />
 
