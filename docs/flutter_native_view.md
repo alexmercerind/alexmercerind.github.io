@@ -25,7 +25,11 @@ On the other hand, a window created by the client code itself e.g. a webview ins
 - If client code decides to create an `HWND` through platform channel interface, they can use the setup present in [`core`](https://github.com/alexmercerind/flutter_native_view/tree/master/core) to embed a window.
 - Since `dart:ffi` is very capable now, one can pass the `HWND` directly as `int` of the window they created using `dart:ffi` or [`win32`](https://github.com/timsneath/win32) through existing plugin API to embed it.
 
-<video controls style={{width: "100%"}} src="https://user-images.githubusercontent.com/28951144/158033783-086d53c9-ed58-4465-9e3d-890d9e72d1a2.mp4" />
+
+
+<video controls style={{width: "100%"}} src="https://user-images.githubusercontent.com/28951144/158053165-bcc74341-8f93-4a58-ab88-d92d1ce7fa71.mp4" />
+
+
 
 ## Example
 
@@ -83,13 +87,14 @@ Absence of official Platform View APIs in Flutter for Windows, Linux & macOS.
 
 - Placement of other Flutter `Widget`s on top of the `NativeView`.
 - Multiple instances of `NativeView`.
-- window movement handling & `NativeView`s positioning.
+- Window movement handling & `NativeView`s positioning.
+- Window resize handling & `NativeView`s sizing.
 - Windows 7 SP1 >= support.
 
 #### Under Progress
 
 - Finalized API.
-- Correct window resizing & `NativeView` sizing.
+- Fixing airspace issues.
 - Interractions with the `NativeView` e.g. mouse clicks or keyboard presses.
 - Lazy resizing of `NativeView` `Widget` after changing size of the underlying native window to avoid airspace.
 - Removing Win32 specific types & `ifdef` magic.
