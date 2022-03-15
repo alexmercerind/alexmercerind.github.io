@@ -9,9 +9,9 @@ import DocsHeader from "../src/components/DocsHeader";
 
 # flutter_native_view
 
-<DocsHeader repository="alexmercerind/flutter_native_view" type="pub.dev" />
-
 Embedding native windows into Flutter window.
+
+<DocsHeader repository="alexmercerind/flutter_native_view" type="pub.dev" />
 
 ## Description
 
