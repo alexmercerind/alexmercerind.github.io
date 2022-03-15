@@ -71,7 +71,7 @@ class _MyAppState extends State<MyApp> {
 }
 ```
 
-Try running the [example](./example) application by cloning the repository.
+Try running the [example](https://github.com/alexmercerind/flutter_native_view/blob/master/example/lib/main.dart) application by cloning the repository.
 
 ## Motivation
 
