@@ -103,11 +103,6 @@ const config = {
             className: "header-discord-link",
             position: "right",
           },
-          {
-            href: "https://wa.me/+917905236796",
-            className: "header-whatsapp-link",
-            position: "right",
-          },
         ],
       },
       footer: {
