@@ -58,7 +58,7 @@ export default function Profile() {
           <div className={styles.description}>Node.js, electron.js, express.js</div>
           <div className={styles.description}>Flask, FastAPI, bottle.py</div>
           <div className={styles.description}>Firebase, Heroku, Vercel, PostreSQL</div>
-          <div className={styles.description}>C++/WinRT, libmpv, libVLC, Win32, miniaudio, SFML</div>
+          <div className={styles.description}>C++/WinRT, CMake, libmpv, libVLC, Win32, miniaudio, SFML</div>
           <div className={styles.description}>Git</div>
           <div className={styles.description}>Visual Studio Code, Visual Studio, Android Studio, Sublime</div>
           <div className={styles.description}>Good knowledge of asynchronous &amp; object oriented programming.</div>
@@ -131,6 +131,7 @@ export default function Profile() {
           <li className={styles.description}>My first language was Python, which I learnt at school. Since then, I learnt everything myself by reading docs &amp; articles, watching videos and creating my own software &amp; documentations.</li>
           <li className={styles.description}>Currently, I'm pursuing bachelor's in information technology at <a href="https://gbpuat.ac.in/">GBPUAT</a>.</li>
           <li className={styles.description}>I'm 19 years old.</li>
+          <li className={styles.description}>I like reading documentation more than watching videos.</li>
         </ul>
       </div>
     </div>
