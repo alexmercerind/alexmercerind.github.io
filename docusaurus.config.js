@@ -16,6 +16,12 @@ const config = {
   organizationName: "alexmercerind",
   projectName: "alexmercerind.github.io",
   deploymentBranch: "gh-pages",
+  scripts: [
+    {
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7639513162093316',
+      crossorigin: 'anonymous',
+    },
+  ],
   presets: [
     [
       "classic",
