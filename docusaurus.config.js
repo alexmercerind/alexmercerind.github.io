@@ -133,10 +133,6 @@ const config = {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/hitesh-kumar-saini",
               },
-              {
-                label: "WhatsApp",
-                href: "https://wa.me/+917905236796",
-              },
             ],
           },
         ],
