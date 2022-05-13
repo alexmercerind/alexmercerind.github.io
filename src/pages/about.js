@@ -14,7 +14,7 @@ function HomepageHeader() {
     <header className={clsx("hero hero--primary", styles.hero)}>
       <div className={styles.header}>
         <div className={styles.infobar}>
-          <div className={styles.tooltip}>Here for the libraries' docs? Go to the <Link className={styles.jump} to="/docs">Docs</Link>.</div>
+          <div className={styles.tooltip}>Here for the libraries' docs? Go to the <Link className={styles.jump} to="/">Docs</Link>.</div>
           <div className={styles.tooltip}>Here for the projects? Jump to the <a className={styles.jump} onClick={() => document.getElementById("projects").scrollIntoView({ "behavior": "smooth" })}>Projects</a>.</div>
         </div>
         <div className={styles.row}>
@@ -24,7 +24,7 @@ function HomepageHeader() {
           <div className={styles.container}>
             <h1 data-aos="fade-up" className={styles.title}>Hitesh Kumar Saini</h1>
             <p data-aos="fade-up" className={styles.subtitle}>Dehradun, India</p>
-            <p data-aos="fade-up" data-aos-delay="500" className={styles.tagline}>I'm a Flutter (+ FFI, platform channels, BLoC, Provider) &amp; React.js (+ React Router) developer.<br />I mainly write C++, Dart, Python &amp; JavaScript. I love solving people's problems &amp; built a number of open source libraries &amp; apps while doing this. Hopefully, few of my libraries &amp; projects are well loved by community &amp; I appreciate everyone who is using those in their apps &amp; other projects. I also enjoy writing native C++ Windows &amp; Linux code (as used in my Flutter plugins &amp; other libraries), dealing with media playback, reverse engineering APIs &amp; webscraping.</p>
+            <p data-aos="fade-up" data-aos-delay="500" className={styles.tagline}>I'm a Flutter (+ FFI, platform channels, BLoC, Provider) &amp; React.js (+ React Router) developer.<br />I mainly write C++, Dart, Python &amp; JavaScript. I love solving people's problems &amp; built a number of open source libraries &amp; apps while doing this. Hopefully, few of my libraries &amp; projects are well loved by community &amp; I appreciate everyone who is using those in their apps &amp; other projects. I have good knowledge of object oriented &amp; asynchronous programming. I also enjoy writing native C++ Windows &amp; Linux code (as used in my Flutter plugins &amp; other libraries), dealing with media playback, reverse engineering APIs &amp; webscraping.</p>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@ export default function Home() {
 
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Hello from Hitesh`}
       description={"Libraries, apps & other projects."}>
       <Head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
@@ -61,8 +61,6 @@ export default function Home() {
         <Profile />
         <br id="projects" />
         <br />
-        <br />
-        <h1 className={styles.projectsTitle}>Projects</h1>
         <Project
           index={0}
           maintainer={"alexmercerind"}
@@ -100,8 +98,8 @@ export default function Home() {
             "libVLC++": "https://github.com/videolan/libvlcpp",
           }}
           images={[
-            "https://github.com/alexmercerind/dart_vlc/blob/assets/dart_vlc_6.png?raw=true",
-            "https://github.com/alexmercerind/dart_vlc/blob/assets/dart_vlc_7.png?raw=true",
+            require('@site/static/img/dart_vlc/0.webp').default,
+            require('@site/static/img/dart_vlc/1.webp').default,
           ]}
           extraLanguages={["C++"]}
           achievements={[
@@ -195,7 +193,6 @@ export default function Home() {
           extraLanguages={["Dart"]}
           achievements={[
             "A simple Flutter plugin to send notifications on Windows.",
-            "Badly written old-school C++ code.",
             "Uses WinToast.",
           ]}
         />

@@ -11,13 +11,12 @@ export default function Home() {
     AOS.init({
       once: false,
       mirror: true,
-      delay: 200,
     });
   }, []);
 
   return (
     <Layout
-      title={`Docs`}
+      title={"Docs"}
       description={"Docs for various libraries, modules & plugins."}
     >
       <Head>

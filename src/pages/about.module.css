@@ -14,8 +14,9 @@
 
 .jump {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: underline !important;
   margin-left: 4px;
+  cursor: pointer;
 }
 
 .jump:hover {

@@ -15,7 +15,7 @@
   --ifm-color-primary-lightest: #7c4dff;
   --ifm-code-font-size: 95%;
   --serif-font: "Roboto Condensed", sans-serif, serif;
-  --ifm-navbar-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+  --ifm-navbar-shadow: 0 2px 4px rgba(0, 0, 0, 0.19),
     0 6px 6px rgba(0, 0, 0, 0.23);
   font-family: "Segoe UI", "Noto Sans", "Roboto", sans-serif;
 }
@@ -306,6 +306,7 @@ html[data-theme="dark"] .header-whatsapp-link:after {
 /* react-responsive-carousel specific */
 
 .carousel-slider .arrow-left {
+  user-select: none;
   position: absolute;
   top: 50%;
   padding: 0;
@@ -343,6 +344,7 @@ html[data-theme="dark"] .header-whatsapp-link:after {
 }
 
 .carousel-slider .arrow-right {
+  user-select: none;
   position: absolute;
   top: 50%;
   padding: 0;

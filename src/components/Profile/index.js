@@ -113,7 +113,7 @@ export default function Profile() {
         <div>
           <div className={styles.subheader}>Experience</div>
           <div className={styles.detail}><a target={"__blank"} href={"https://github.com/alexmercerind"}>Open Source</a> • Always • 2019 - Present</div>
-          <div className={styles.description}>Building cool libraries used by number of projects worldwide &amp; apps loved by many. Contributing to other awesome projects.</div>
+          <div className={styles.description}>Building/maintaining libraries used by number of projects worldwide &amp; apps loved by many. Contributing to other awesome projects.</div>
           <div className={styles.detail}><a target={"__blank"} href={"https://presence.is/beta"}>Presence</a> • Part-Time • September 2021 - Present<br /></div>
           <div className={styles.description}>Flutter developer • The social messaging app which is redefining the way people stay online and communicate with others.</div>
           <div className={styles.detail}><a target={"__blank"} href={"https://hzplayer.com"}>SYQEL</a> • Intern • May 2021 - July 2021<br /></div>
@@ -128,10 +128,10 @@ export default function Profile() {
           <li className={styles.description}>I like writing C++. I enjoy writing native code in general.</li>
           <li className={styles.description}>I think about design a lot. If it's UI isn't good, I won't use it.</li>
           <li className={styles.description}>I want to work at in a good company one day.</li>
-          <li className={styles.description}>My first language was Python, which I learnt at school. Since then, I learnt everything myself by reading docs &amp; articles, watching videos and creating my own software &amp; documentations.</li>
+          <li className={styles.description}>My first language was Python, which I learnt at school. Soon I switched to C++. Since then, I've been learning everything by reading docs &amp; articles, watching videos and creating my own software &amp; documentations.</li>
           <li className={styles.description}>Currently, I'm pursuing bachelor's in information technology at <a href="https://gbpuat.ac.in/">GBPUAT</a>.</li>
           <li className={styles.description}>I'm 19 years old.</li>
-          <li className={styles.description}>I like reading documentation more than watching videos.</li>
+          <li className={styles.description}>I like reading documentation more than watching tutorial videos.</li>
         </ul>
       </div>
     </div>
