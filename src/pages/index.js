@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "@theme/Layout";
 import Head from "@docusaurus/Head";
-import ProjectTile from "@site/src/components/ProjectTile";
+import ProjectSection from "@site/src/components/ProjectSection";
 import styles from "./index.module.css";
 import AOS from "aos";
 
@@ -26,53 +26,64 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"></link>
       </Head>
       <div className={styles.scrollable}>
-        <h1 className={styles.docs}>Docs</h1>
         <div className={styles.container}>
-          <ProjectTile
-            type={'docs'}
+          <ProjectSection
+
             key={0}
             index={0}
             maintainer={"alexmercerind"}
+            description={"Flutter audio/video playback, broadcast & recording library for Windows, Linux & macOS with playlist control. Native C/C++ & libvlc."}
             repository={"dart_vlc"}
             extraLanguages={["C++"]}
-            achievements={[]}
-            links={{}}
+
           />
         </div>
         <div className={styles.container}>
-          <ProjectTile
-            type={'docs'}
+          <ProjectSection
+
             key={1}
             index={1}
             maintainer={"alexmercerind"}
+            description={"Flutter library for window acrylic, mica & transparency effects (Windows, macOS & Linux)."}
             repository={"flutter_acrylic"}
             extraLanguages={["Dart"]}
-            achievements={[]}
-            links={{}}
+
           />
         </div>
         <div className={styles.container}>
-          <ProjectTile
-            type={'docs'}
+          <ProjectSection
+
             key={2}
             index={2}
             maintainer={"alexmercerind"}
             repository={"flutter_media_metadata"}
+            description={"A Flutter plugin to read metadata of media files. Supports Windows, Linux, macOS, Android, iOS & Web."}
             extraLanguages={["Dart"]}
-            achievements={[]}
-            links={{}}
+
           />
         </div>
         <div className={styles.container}>
-          <ProjectTile
-            type={'docs'}
+          <ProjectSection
+
+            key={2}
+            index={2}
+            maintainer={"alexmercerind"}
+            repository={"flutter_native_view"}
+            description={"Embedding native windows directly into Flutter window (scrolling support & Flutter widgets placement on-top). [WIP]"}
+            extraLanguages={["Dart"]}
+
+          />
+        </div>
+        <div className={styles.container}>
+          <ProjectSection
+
             key={3}
             index={3}
             maintainer={"alexmercerind"}
             repository={"windows_taskbar"}
+            description={"Flutter plugin serving utilities related to Windows taskbar."}
             extraLanguages={["Dart"]}
-            achievements={[]}
-            links={{}}
+
           />
         </div>
       </div>

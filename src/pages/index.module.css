@@ -5,17 +5,7 @@
   padding-top: 16px;
 }
 
-.docs {
-  position: absolute;
-  font-family: var(--serif-font);
-  font-size: 96px;
-  color: var(--ifm-color-primary);
-  transform: rotateZ(-90deg) translateX(-140%) translateY(50%);
-  transform-origin: 0px 0px;
-}
-
-@media screen and (max-width: 996px) {
-  .docs {
-    display: none;
-  }
+.scrollable {
+  width: 100%;
+  overflow: hidden;
 }
