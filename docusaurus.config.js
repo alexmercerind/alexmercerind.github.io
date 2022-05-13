@@ -28,11 +28,11 @@ const config = {
       /** @type {import("@docusaurus/preset-classic").Options} */
       ({
         docs: {
-          editUrl: ({ versionDocsDirPath, docPath }) =>
-            `https://github.com/alexmercerind/alexmercerind.github.io/edit/master/docs/${docPath}`,
-          breadcrumbs: false,
-          sidebarCollapsed: true,
-          sidebarPath: require.resolve("./sidebars.js"),
+          // editUrl: ({ versionDocsDirPath, docPath }) =>
+          //   `https://github.com/alexmercerind/alexmercerind.github.io/edit/master/docs/${docPath}`,
+          // breadcrumbs: false,
+          // sidebarCollapsed: true,
+          // sidebarPath: require.resolve("./sidebars.js"),
         },
         blog: {
           showReadingTime: true,
@@ -64,10 +64,9 @@ const config = {
       colorMode: {
         defaultMode: "light",
         disableSwitch: false,
-        respectPrefersColorScheme: true,
+        respectPrefersColorScheme: false,
       },
       navbar: {
-        title: "alexmercerind",
         // logo: {
         //   alt: "alexmercerind",
         //   src: "img/alexmercerind.png",
@@ -84,6 +83,11 @@ const config = {
           //   label: "Docs",
           //   position: "left",
           // },
+          {
+            to: "/",
+            label: "Docs",
+            position: "left",
+          },
           {
             to: "/about",
             label: "About",
