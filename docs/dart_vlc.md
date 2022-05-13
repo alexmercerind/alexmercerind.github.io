@@ -22,10 +22,29 @@ Feel free to open a [new issue](https://github.com/alexmercerind/dart_vlc/issues
 
 Mention in your `pubspec.yaml`.
 
+_pub.dev_
+
 ```yaml
 dependencies:
   ...
-  dart_vlc: ^0.1.8
+  dart_vlc: ^0.1.9
+```
+
+_GitHub_
+
+```yaml
+dependencies:
+  dart_vlc:
+    git:
+      url: https://github.com/alexmercerind/dart_vlc.git
+      ref: master
+
+dependency_overrides:
+  dart_vlc_ffi:
+    git:
+      url: https://github.com/alexmercerind/dart_vlc.git
+      ref: master
+      path: ffi
 ```
 
 <div style={{display: "flex", flexDirection: "row", width: "100%", overflowX: "scroll"}}>
@@ -184,32 +203,25 @@ player.setDevice(devices[0]);
 player.takeSnapshot(File('C:/save/the/screenshot/here.JPG'), 1920, 1080);
 ```
 
-### Show the video inside widget tree
+### Show the video inside widget tree.
 
 Show `Video` in the `Widget` tree.
 
+**NOTE:** This will cause additional CPU-load due to conversion of video frames to RGBA/BGRA pixel-buffers & `Texture` interop. For better performance, use [NativeVideo](#nativevideo) instead.
+
 ```dart
 class _MyAppState extends State<MyApp> {
-  final Player player = Player(id: 0);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Display [Video] like this.
       body: Video(
         player: player,
         height: 1920.0,
         width: 1080.0,
-        scale: 1.0, // Default
-        showControls: false, // Default
+        scale: 1.0, // default
+        showControls: false, // default
       ),
     );
-  }
-
-  @override
-  void dispose() {
-    player.dispose();
-    super.dispose();
   }
 }
 ```
@@ -218,10 +230,51 @@ By default, `Video` widget's frame size will adapt to the currently playing vide
 To override this & define custom video frame size, pass `videoDimensions` argument while instanciating `Player` class as follows.
 
 ```dart
-final player = Player(
+Player player = Player(
   id: 69420,
   videoDimensions: const VideoDimensions(640, 360),
 );
+```
+
+### NativeVideo
+
+A more performant `Widget` for showing video inside the `Widget` tree.
+
+This `Widget` is **more performant** compared to `Video` & uses [flutter_native_view](https://github.com/alexmercerind/flutter_native_view.git)
+to embed the video output directly without any texture interop or pixel-buffer copy calls.
+
+But, it is highly dependent on platform & other limitations apply. In general, this widget is more performant & should be used if possible.
+
+1. Edit your `windows/runner/main.cpp` as required [here](https://github.com/alexmercerind/flutter_native_view#setup).
+
+2. Register the plugin with `useFlutterNativeView`.
+
+```dart
+void main() {
+  DartVLC.initilize(useFlutterNativeView: true);
+  runApp(MyApp());
+}
+```
+
+3. Pass `registerTexture` as `false` when creating `Player` & use `NativeVideo` widget.
+
+```dart
+class _MyAppState extends State<MyApp> {
+  Player player = Player(id: 0, registerTexture: false);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: NativeVideo(
+          player: player,
+          height: 420.0,
+          width: 320.0
+        ),
+      ),
+    );
+  }
+}
 ```
 
 Thanks to [@tomassasovsky](https://github.com/tomassasovsky) for adding visual controls to `Video` widget.

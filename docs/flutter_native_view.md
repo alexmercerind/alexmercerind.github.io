@@ -25,16 +25,102 @@ On the other hand, a window created by the client code itself e.g. a webview ins
 - If client code decides to create an `HWND` through platform channel interface, they can use the setup present in [`core`](https://github.com/alexmercerind/flutter_native_view/tree/master/core) to embed a window.
 - Since `dart:ffi` is very capable now, one can pass the `HWND` directly as `int` of the window they created using `dart:ffi` or [`win32`](https://github.com/timsneath/win32) through existing plugin API to embed it.
 
-<video controls style={{width: "100%"}} src="https://user-images.githubusercontent.com/28951144/158442361-6970e676-fa0d-430d-8eee-b3d862b2682c.mp4" />
+<video style={{width: '100%'}} controls src='https://user-images.githubusercontent.com/28951144/159073594-813700fb-0988-424f-86b5-381beccf4247.mp4
+'></video>
 
 ## Example
 
+Video showing a Flutter Windows app running with embedded webview & VLC using [flutter_native_view](https://github.com/alexmercerind/flutter_native_view).
+
+_[slight lag & delay can be observed due to screen recording. the actual experience is very seamless]_
+
+Try running the [example](./example) application by cloning the repository.
+
+## Sponsor
+
+You may sponsor this project's future development & research at:
+
+- [PayPal](https://www.paypal.me/alexmercerind) (one-time)
+- [Patreon](https://www.patreon.com/harmonoid) (monthly-recurring)
+
+It'll be a great motivation for me to continue.
+
+### 💖 Current Sponsors
+
+- [Ahmad Arif Aulia Sutarman](https://github.com/damywise) • 20$ • one-time
+
+## Used By
+
+- [dart_vlc](https://github.com/alexmercerind/dart_vlc#nativevideo)
+
+## Description
+
+This setup only uses Win32 APIs & no texture, intermediate buffers or copying of pixel buffers. Thus, it is **very performant**.
+
+A Flutter plugin / Win32 setup to embed other native Windows (`HWND` on Windows) into Flutter window.
+
+Current API design allows to embed any arbitrary `HWND` completely from Dart as a `Widget`. This can be a good choice when client code wants to embed any third-party window (which is already opened) into the Flutter window.
+However, this is not ideal in most cases, because there is almost no point of embedding a window without having a programmatic control to it (via some API).
+
+On the other hand, a window created by the client code itself e.g. a webview instance window or a video-output window etc. (on which the client code has full programmatic control) will be an ideal window to embed, in that case:
+
+- If client code decides to create an `HWND` through platform channel interface, they can use the setup present in [`core`](https://github.com/alexmercerind/flutter_native_view/tree/master/core) to embed a window (or send back the `HWND` as `int64_t` to the plugin throught Dart).
+- Since `dart:ffi` is very capable now, one can pass the `HWND` directly as `int` of the window they created using `dart:ffi` or [`package:win32`](https://github.com/timsneath/win32) through existing plugin API to embed it.
+
+## Future
+
+In future, I will create natively rendered, performant & less-bundle-sized webview & video playback plugins, if I get enough community support. Currently I'm only targetting Windows to limit the scope of work, though I plan for Linux support at some point.
+
+## Setup
+
+Add following lines to your `windows/runner/main.cpp` file:
+
+```diff
+  #include <flutter/dart_project.h>
+  #include <flutter/flutter_view_controller.h>
+  #include <windows.h>
+
++ #include "flutter_native_view/flutter_native_view_plugin.h"
+  #include "flutter_window.h"
+  #include "utils.h"
+```
+
+```diff
+  window.SetQuitOnClose(true);
+
++ flutternativeview::CreateNativeViewContainer();
+
+  ::MSG msg;
+  while (::GetMessage(&msg, nullptr, 0, 0)) {
+    ::TranslateMessage(&msg);
+    ::DispatchMessage(&msg);
+  }
+```
+
+## Docs
+
+#### Initialize the plugin
+
+```dart
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  /// Initialize.
+  await FlutterNativeView.ensureInitialized();
+  runApp(const MyApp());
+}
+```
+
+#### Create a controller & render a window
+
 ```dart
 class _MyAppState extends State<MyApp> {
-  // Create a [NativeViewController].
+  /// Create a [NativeViewController].
   final controller = NativeViewController(
-    // Using [FindWindow] from `package:win32` to retrieve [HWND] as [int].
-    handle: FindWindow(nullptr, 'VLC Media Player'.toNativeUtf16()));
+    /// Using [FindWindow] from `package:win32` to retrieve `HWND` as [int].
+    handle: FindWindow(nullptr, 'VLC Media Player'.toNativeUtf16()),
+    /// Make the [NativeView] interactable.
+    hitTestBehavior: HitTestBehavior.translucent,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -46,8 +132,9 @@ class _MyAppState extends State<MyApp> {
               child: Stack(
                 children: [
                   LayoutBuilder(
+                    /// Create a [NativeView].
                     builder: (context, constraints) => NativeView(
-                      // Pass [NativeViewController] to render the window.
+                      /// Pass [NativeViewController] to render the window.
                       controller: controller,
                       width: constraints.maxWidth,
                       height: constraints.maxHeight,
@@ -71,21 +158,11 @@ class _MyAppState extends State<MyApp> {
 }
 ```
 
-Try running the [example](https://github.com/alexmercerind/flutter_native_view/blob/master/example/lib/main.dart) application by cloning the repository.
+#### Dispose the native view & destory the window
 
-## Motivation
-
-https://github.com/flutter/flutter/issues/31713
-
-Absence of official Platform View APIs in Flutter for Windows, Linux & macOS.
-
-## Sponsor
-
-You may sponsor this project at [Patreon](https://www.patreon.com/harmonoid) or make voluntary donations at [PayPal](https://www.paypal.me/alexmercerind).
-
-### 💖 Current Sponsors
-
-- [Ahmad Arif Aulia Sutarman](https://github.com/damywise)
+```dart
+controller.dispose();
+```
 
 ## Features
 
@@ -95,21 +172,30 @@ You may sponsor this project at [Patreon](https://www.patreon.com/harmonoid) or 
 - Multiple instances of `NativeView`.
 - Window movement handling & `NativeView`s positioning.
 - Window resize handling & `NativeView`s sizing.
-- Windows 8 & higher support.
-- Interractions with the `NativeView` e.g. mouse clicks or keyboard key presses.
+- Windows 10 & higher support.
 - Proper disposing of `HWND` and instances.
+- Semi transparent `Widget`s on top of `NativeView`.
+- Customizable hit-test i.e. optional interactability with the `NativeView`s.
+- Placement of `NativeView`s inside scrollables like `ListView`s.
 
 #### Under Progress
 
 - Finalized API.
-- Customizable hit-test i.e. optional interactability with the `NativeView`s.
-- Semi transparent `Widget`s on top of `NativeView`.
-- Efficiently detecting changes in global positioning of `NativeView` `Widget`s.
-- Removing Win32 specific types & `ifdef` magic.
+- General stability.
+- Better maximize/minimize animations.
+- Support for older Windows versions.
 - Defining z-order for each `NativeViewController`.
-- Ideally, flutter view should be made transparent instead of masking a color to show the `native_view`s underneath (but I'm not talented enough to solve that yet).
-  - Right now, I'm not sure if subclassing flutter view `HWND` can somehow solve this issue.
-  - FYI https://github.com/flutter/flutter/issues/71735.
+
+## Known Issues
+
+- Windows snapping layouts & window snapping (only when a `NativeView` is visible on screen).
+- `HitTestBehavior.translucent` leaks through the title-bar.
+
+## Motivation
+
+https://github.com/flutter/flutter/issues/31713
+
+Absence of official Platform View APIs in Flutter for Windows, Linux & macOS.
 
 ## Platforms
 
@@ -118,6 +204,8 @@ The plugin currently works on following platforms:
 | Platform | State   |
 | -------- | ------- |
 | Windows  | Working |
+
+I plan to add Linux support soon. For now, limiting the scope of work to just Windows.
 
 ## License
 
