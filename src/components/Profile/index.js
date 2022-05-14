@@ -26,7 +26,7 @@ export default function Profile() {
   }, []);
 
   return (<div className={styles.container}>
-    <div id="content" data-aos="fade-up" className={styles.profileCard}>
+    <div id="content" className={styles.profileCard}>
       <div className={styles.profile}>
         <div>
           <div className={styles.subheader}>Frameworks, Libraries &amp; Tools</div>
@@ -82,7 +82,7 @@ export default function Profile() {
         </div>
       </div>
     </div>
-    <div data-aos="fade-up" className={styles.profileCard}>
+    <div className={styles.profileCard}>
       <div className={styles.profile}>
         <div className={styles.subheader}>Programming Languages</div>
         <div style={{

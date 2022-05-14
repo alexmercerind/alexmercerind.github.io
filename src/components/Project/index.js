@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import ProjectTile from "../ProjectTile";
 import styles from "./styles.module.css";
 
-export default function Project({ index, maintainer, repository, achievements, links, images, extraLanguages = [] }) {
+export default function Project({ index, maintainer, repository, description, achievements, links, images, extraLanguages = [] }) {
   const [achievementElements, setAchievementElements] = useState(null);
   const [linkElements, setLinkElements] = useState(null);
   let elements;
@@ -24,7 +24,7 @@ export default function Project({ index, maintainer, repository, achievements, l
   }, []);
 
   return <div className={styles.project}>
-    <ProjectTile index={index} images={images} maintainer={maintainer} repository={repository} extraLanguages={extraLanguages} />
+    <ProjectTile index={index} images={images} maintainer={maintainer} repository={repository} description={description} extraLanguages={extraLanguages} />
     <div className={styles.summary}>
       {achievementElements}
       <div className={styles.links}>

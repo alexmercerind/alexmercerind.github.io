@@ -21,7 +21,7 @@ const kLanguageColors = {
   "CSS": "#563D7C",
 }
 
-export default function ProjectTile({ type, index, maintainer, repository, images, extraLanguages }) {
+export default function ProjectTile({ type, index, maintainer, repository, description, images, extraLanguages }) {
   const [repositoryJSON, setRepositoryJSON] = useState(null);
   useEffect(async () => {
     let response = await fetch(`https://api.github.com/repos/${maintainer}/${repository}`);
@@ -38,11 +38,11 @@ export default function ProjectTile({ type, index, maintainer, repository, image
         {type == undefined ? <a href={repositoryJSON?.html_url} target={"__blank"} className={clsx("material-icons", "md-36", styles.titleBarIcon)}>open_in_new</a> : <Link className={clsx("material-icons", "md-36", styles.titleBarIcon)} to={`/docs/${repository}`}>open_in_new</Link>}
       </div>
       <div className={styles.description}>
-        {repositoryJSON?.description?.replace(/([\uE000-\uF8FF]|\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDDFF])/g, "")}
+        {description ?? repositoryJSON?.description?.replace(/([\uE000-\uF8FF]|\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDDFF])/g, "")}
       </div>
     </div>
     <div className={styles.cardContent}>
-      <div className={styles.iconBar}>
+      {repositoryJSON !== null ? <div className={styles.iconBar}>
         <div className={styles.iconContainer}>
           <div className={styles.icon}>
             <StarIcon size="small" />
@@ -67,7 +67,7 @@ export default function ProjectTile({ type, index, maintainer, repository, image
             {(repositoryJSON?.subscribers_count ?? "Unknown") + " Watchers"}
           </div>
         </div>
-      </div>
+      </div> : null}
       <div className={styles.languageBar}>
         {
           extraLanguages.map((language) => {
@@ -113,7 +113,7 @@ export default function ProjectTile({ type, index, maintainer, repository, image
         showThumbs={false}
       >
         {
-          images.map((e) => <div className={styles.image} ><img className={styles.imageChild} src={e}></img></div>)
+          images.map((e) => <div className={styles.image} ><img loading="lazy" className={styles.imageChild} src={e}></img></div>)
         }
       </Carousel > : null
     }
