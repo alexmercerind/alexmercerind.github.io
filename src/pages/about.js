@@ -65,6 +65,7 @@ export default function Home() {
           index={0}
           maintainer={"alexmercerind"}
           repository={"harmonoid"}
+          description="Elegant music app to play &amp; manage music library. YouTube Music client. Lyrics &amp; Playlists."
           links={{
             "Download": "https://github.com/harmonoid/harmonoid/releases/latest",
             "libmpv": "https://mpv.io/",
@@ -92,6 +93,7 @@ export default function Home() {
           index={1}
           maintainer={"alexmercerind"}
           repository={"dart_vlc"}
+          description="Flutter audio/video playback, broadcast &amp; recording library for Windows, Linux &amp; macOS with playlist control. Native C/C++ &amp; libvlc."
           links={{
             "pub.dev": "https://pub.dev/packages/dart_vlc",
             "videoLAN retweet": "https://twitter.com/videolan/status/1371774126080286722",
@@ -113,12 +115,13 @@ export default function Home() {
           index={2}
           maintainer={"alexmercerind"}
           repository={"flutter_acrylic"}
+          description="Flutter library for window acrylic, mica &amp; transparency effects (Windows, macOS &amp; Linux)."
           links={{
             "pub.dev": "https://pub.dev/packages/flutter_acrylic",
             "Rafael Rivera": "https://github.com/riverar",
           }}
           images={[
-            "https://github.com/alexmercerind/flutter_acrylic/raw/assets/mug8J4efWu.gif?raw=true",
+            require("@site/static/img/flutter_acrylic.jpg").default,
           ]}
           extraLanguages={["Dart"]}
           achievements={[
@@ -131,13 +134,13 @@ export default function Home() {
           index={3}
           maintainer={"alexmercerind"}
           repository={"windows_taskbar"}
+          description="Flutter plugin serving utilities related to Windows taskbar."
           links={{
             "pub.dev": "https://pub.dev/packages/windows_taskbar",
             "ITaskbarList3": "https://docs.microsoft.com/en-us/windows/win32/api/shobjidl_core/nn-shobjidl_core-itaskbarlist3",
           }}
           images={[
-            "https://github.com/alexmercerind/windows_taskbar/raw/assets/bMebejv57F.gif?raw=true",
-            "https://github.com/alexmercerind/windows_taskbar/raw/assets/OdzgD1yqEO.gif?raw=true",
+            require("@site/static/img/windows_taskbar.jpg").default,
           ]}
           extraLanguages={["Dart"]}
           achievements={[
@@ -146,9 +149,30 @@ export default function Home() {
           ]}
         />
         <Project
+          index={3}
+          maintainer={"alexmercerind"}
+          repository={"image_palette_generator"}
+          description="Generate a color palette from an image or find dominant color."
+          links={{
+            "Repository": "https://github.com/alexmercerind/image_palette_generator",
+            "exoquant": "https://github.com/exoticorn/exoquant",
+            "stb_image.h": "https://github.com/nothings/stb/blob/master/stb_image.h",
+          }}
+          images={[
+            require("@site/static/img/image_palette_generator.jpg").default,
+          ]}
+          achievements={[
+            "Extracts a vibrant color palette (using image quantization), color tones (based on averaging) or dominant color from image.",
+            "Object oriented & friendly to use.",
+            "Capable of loading encoded image formats using stb_image.h",
+            "Performant & efficient. Rescales large images to a smaller size before processing.",
+          ]}
+        />
+        <Project
           index={4}
           maintainer={"alexmercerind"}
           repository={"flutter_media_metadata"}
+          description="A Flutter plugin to read metadata of media files. Supports Windows, Linux, macOS, Android, iOS &amp; Web."
           links={{
             "pub.dev": "https://pub.dev/packages/flutter_media_metadata",
           }}
@@ -167,6 +191,7 @@ export default function Home() {
           index={5}
           maintainer={"alexmercerind"}
           repository={"dart_discord_rpc"}
+          description="Discord Rich Presence for Flutter &amp; Dart."
           links={{
             "pub.dev": "https://pub.dev/packages/dart_discord_rpc",
           }}
@@ -181,6 +206,7 @@ export default function Home() {
           index={6}
           maintainer={"alexmercerind"}
           repository={"desktoasts"}
+          description="A Dart FFI package to send toasts on Windows. Written in C++, based on WinToast."
           links={{
             "pub.dev": "https://pub.dev/packages/desktoasts",
             "WinToast": "https://github.com/mohabouje/WinToast",
@@ -200,6 +226,7 @@ export default function Home() {
           index={7}
           maintainer={"harmonoid"}
           repository={"libwinmedia"}
+          description="[Archived] A cross-platform simple media playback library for C/C++."
           links={{
             "libwinmedia": "https://github.com/harmonoid/libwinmedia",
             "libwinmedia-py": "https://github.com/mytja/libwinmedia-py",
@@ -219,6 +246,7 @@ export default function Home() {
           index={8}
           maintainer={"alexmercerind"}
           repository={"youtube-search-python"}
+          description="Search for YouTube videos, channels &amp; playlists. Get video &amp; playlist info using link. Get search suggestions. WITHOUT YouTube Data API v3."
           links={{
             "PyPI": "https://github.com/alexmercerind",
           }}
@@ -233,6 +261,7 @@ export default function Home() {
           index={9}
           maintainer={"alexmercerind"}
           repository={"flutter_audio_desktop"}
+          description="An audio playback library for Flutter Desktop. Supports Windows &amp; Linux. Based on miniaudio."
           links={{
             "dart_vlc": "https://pub.dev/packages/dart_vlc",
             "miniaudio": "https://github.com/mackron/miniaudio",
