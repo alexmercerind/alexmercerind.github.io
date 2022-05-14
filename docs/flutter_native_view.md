@@ -34,7 +34,7 @@ Video showing a Flutter Windows app running with embedded webview & VLC using [f
 
 _[slight lag & delay can be observed due to screen recording. the actual experience is very seamless]_
 
-Try running the [example](./example) application by cloning the repository.
+Try running the example application by cloning the repository.
 
 ## Sponsor
 
