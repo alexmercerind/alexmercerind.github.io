@@ -1,6 +1,6 @@
 ---
 slug: alexmercerind
-title: C++'s <future>, making async C callbacks functions sync & enjoyable asynchronous programming
+title: C++'s <future>, making async C callbacks functions sync & enjoyable multi-threading
 tags: [c++, std::async, multi-threading, async]
 ---
 
