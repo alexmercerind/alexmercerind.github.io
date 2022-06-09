@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkalexmercerind_github_io=self.webpackChunkalexmercerind_github_io||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"C++\'s <future>, making async C callbacks functions sync & enjoyable asynchronous programming","permalink":"/blog/alexmercerind"}]}')}}]);

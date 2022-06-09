@@ -8,7 +8,7 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[C++'s <future>, making async C callbacks functions sync & enjoyable asynchronous programming]]></title>
+            <title><![CDATA[C++'s <future>, making async C callbacks functions sync & enjoyable multi-threading]]></title>
             <link>https://alexmercerind.com/blog/alexmercerind</link>
             <guid>alexmercerind</guid>
             <pubDate>Sat, 21 May 2022 00:00:00 GMT</pubDate>

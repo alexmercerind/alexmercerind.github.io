@@ -8,7 +8,7 @@
     <subtitle>alexmercerind Blog</subtitle>
     <icon>https://alexmercerind.com/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[C++'s <future>, making async C callbacks functions sync & enjoyable asynchronous programming]]></title>
+        <title type="html"><![CDATA[C++'s <future>, making async C callbacks functions sync & enjoyable multi-threading]]></title>
         <id>alexmercerind</id>
         <link href="https://alexmercerind.com/blog/alexmercerind"/>
         <updated>2022-05-21T00:00:00.000Z</updated>
