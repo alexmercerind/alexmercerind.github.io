@@ -4,7 +4,7 @@ title: C++'s <future>, making async C callbacks functions sync & enjoyable async
 tags: [c++, std::async, multi-threading, async]
 ---
 
-I use [`<future>`](https://cplusplus.com/reference/future) header in C++ quite-quite often in my code everywhere at this point & wanted to share what's so cool in it.
+I use [`<future>`](https://cplusplus.com/reference/future) header in C++ very-very often in my code everywhere at this point & wanted to share what's so cool in it.
 
 <!--truncate-->
 
