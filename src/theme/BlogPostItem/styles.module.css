@@ -1,0 +1,54 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.blogPostTitle {
+  font-size: 36px;
+}
+
+.smallTitle {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-family: unset !important;
+}
+
+.blogPostData {
+  font-size: 0.9rem;
+}
+
+.blogPostDetailsFull {
+  flex-direction: column;
+}
+
+.blogCard {
+  z-index: 1000 !important;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.3s;
+}
+
+html[data-theme="dark"] .blogCard {
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.cardImg {
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.cardContent {
+  margin: 20px;
+}
+
+.tag {
+  padding: 0.25rem 0.4rem;
+}
