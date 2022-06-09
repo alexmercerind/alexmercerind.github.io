@@ -520,66 +520,41 @@ Done
 - `setVolume`.
 - `setRate`.
 - `seek`.
-- Events.
-- Automatic fetching of headers, libs & shared libraries.
-- Changing VLC version from CMake.
 - Event streams.
-  - `Player.currentState`
-    - `index`: Index of current media in `Playlist`.
-    - `medias`: List of all opened `Media`s.
-    - `media`: Currently playing `Media`.
-    - `isPlaylist`: Whether a single `Media` is loaded or a `Playlist`.
-  - `Player.positionState`
-    - `position`: Position of currently playing media in `Duration`.
-    - `duration`: Position of currently playing media in `Duration`.
-  - `Player.playbackState`
-    - `isPlaying`.
-    - `isSeekable`.
-    - `isCompleted`.
-  - `Player.generalState`
-    - `volume`: Volume of current `Player` instance.
-    - `rate`: Rate of current `Player` instance.
-- `add`/`insert`/`remove`/`move` `Media` inside `Playlist` during playback.
+- `add`/`insert`/`remove`/`move` `Media` inside `Playlist` during playback with no interruption.
 - Device enumeration & changing.
-- Retrieving `Meta` of a `Media`.
-- Embedding `Video` inside the Flutter window.
+- Retrieving metadata/tags of a `Media`.
+- Embedding `Video` inside the Flutter window (using texture or natively).
 - Supporting live streaming links.
 - `Broadcast` class for broadcasting `Media`.
 - `Record` class for recording `Media`.
 - `Chromecast` class.
-- `Equalizer` support.
-- Adding headers for `Media.network` (Not possible, added user agent).
-- Switching to FFI for more cross platform freedom.
+- `Equalizer` configuration & presets.
+- Changing user agent.
 - Changing `Video`'s frame size according to video.
-- Saving snapshot.
+- Saving screenshot of the video.
+- Changing/retrieving audio track.
+- Media clipping.
+- Support for Windows, Linux or macOS.
 
 Under progress or planned features (irrespective of order)...
 
-- Removing [libVLC++](https://github.com/videolan/libvlcpp) dependency. (Maybe).
+- Bringing project on Android and iOS.
+- Removing [libVLC++](https://github.com/videolan/libvlcpp) dependency.
 - Subtitle control.
-- Audio track control.
-- Writing metadata tags.
-- Making things more efficient.
-- Supporting native volume control/lock screen notifications (Maybe).
-- Bringing project on other platforms like Android/iOS (Maybe).
-- D-Bus MPRIS controls for `Media` playback control (Maybe).
 
 ## Acknowledgements
 
-First of all, thanks to the [VideoLAN](https://www.videolan.org) team for creating [libVLC](https://github.com/videolan/vlc) & [libVLC++](https://github.com/videolan/libvlcpp). Really great guys really great at their work.
+- BIG thanks to [@jnschulze](https://github.com/jnschulze) for his awesome contributions to this project & to the Flutter engine itself like adding texture support & adding macOS support here. I have learnt a lot about modern C++ & good-practices when writing code from you, thanks a lot for your guidances, reviews, work & donation. I'm really really thankful to you.
+- BIG thanks to [@DomingoMG](https://github.com/DomingoMG) for adding `Record` and `Chromecast` classes. Also, thanks a lot for donation to the project & giving me motivation to start building this. I would've never attempted this if you didn't motivate me. And now that it started, `dart_vlc` has grown a lot.
+- Thanks to [@tomassasovsky](https://github.com/tomassasovsky) for adding visual controls to `Video` widget.
 
-Thanks to [@jnschulze](https://github.com/jnschulze) for his awesome contributions to this project & to Flutter engine itself like adding texture support.
-
-Thanks to [@krjw-eyev](https://github.com/krjw-eyev) for working on iOS support.
-
-Thanks to [@jnschulze](https://github.com/jnschulze) & [@namniav](https://github.com/namniav) for working on macOS support.
-
-Thanks to following members of libVLC community (irrespective of the order) for giving general ideas about libVLC APIs:
-
-- [@jeremyVignelles](https://github.com/jeremyVignelles)
-- [@chouquette](https://github.com/chouquette)
-- [@mfkl](https://github.com/mfkl)
-- [@caprica](https://github.com/caprica)
+- Thanks to following members of libVLC community (irrespective of the order) for giving general ideas about libVLC APIs:
+  - [@jeremyVignelles](https://github.com/jeremyVignelles)
+  - [@chouquette](https://github.com/chouquette)
+  - [@mfkl](https://github.com/mfkl)
+  - [@caprica](https://github.com/caprica)
+- Finally, thanks to the [VideoLAN](https://www.videolan.org) team for creating [libVLC](https://github.com/videolan/vlc) & [libVLC++](https://github.com/videolan/libvlcpp). Really great guys really great at their work.
 
 ## Contributions
 
