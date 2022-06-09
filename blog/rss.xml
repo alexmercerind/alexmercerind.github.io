@@ -8,12 +8,13 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[C++'s <future>, making async C function pointer callbacks sync & other stuff]]></title>
+            <title><![CDATA[C++'s <future>, making async C callbacks functions sync & enjoyable asynchronous programming]]></title>
             <link>https://alexmercerind.com/blog/alexmercerind</link>
             <guid>alexmercerind</guid>
             <pubDate>Sat, 21 May 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet risus sed diam congue lobortis. Ut feugiat, lectus et mattis pellentesque, mi est maximus dolor, condimentum finibus nulla leo quis ante. Nam nisl nibh, tristique semper sem ut, congue sollicitudin lacus. Mauris hendrerit vel mi id viverra. Maecenas pharetra convallis posuere. Praesent tincidunt augue vel accumsan euismod. In pretium ipsum lobortis nunc tempus pharetra. Suspendisse maximus auctor semper.]]></description>
+            <description><![CDATA[I use `` header in C++ quite-quite often in my code everywhere at this point & wanted to share what's so cool in it.]]></description>
             <category>c++</category>
+            <category>std::async</category>
             <category>multi-threading</category>
             <category>async</category>
         </item>
