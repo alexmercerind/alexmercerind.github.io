@@ -99,6 +99,11 @@ const config = {
             position: "left",
           },
           {
+            to: "/donate",
+            label: "Donate",
+            position: "left",
+          },
+          {
             href: "https://github.com/alexmercerind",
             className: "header-github-link",
             position: "right",

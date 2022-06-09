@@ -1,5 +1,6 @@
 ---
-slug: alexmercerind
+slug: cpp-future-async-sync-multi-threading
+authors: alexmercerind
 title: C++'s <future>, making async C callbacks functions sync & enjoyable multi-threading
 tags: [c++, std::async, multi-threading, async]
 ---
@@ -8,7 +9,7 @@ I use [`<future>`](https://cplusplus.com/reference/future) header in C++ very-ve
 
 <!--truncate-->
 
-Generally, I don't really like classic way of handling `Thread`s, so much to worry about, spawning, running or joining.
+Generally, I don't really like classic way of handling `Thread`s, so much to worry about, spawning, running or joining. Even though, _nearly_ every language has that POSIX-like API.
 
 What I find more elegant is:
 
@@ -42,7 +43,7 @@ int32_t main() {
 }
 ```
 
-Don't late that capturing lambda confuse you.
+Don't let that capturing lambda confuse you.
 
 Something like this will be up on your terminal:
 
@@ -50,12 +51,11 @@ Something like this will be up on your terminal:
 A std::future came to life!
 Hey, I'll be first on the console!
 Hello from std::future & I'm 2 seconds late!
-a_variable_declared_outside: 69420
 ```
 
 :::warning
 
-Always keep a reference accessible to yo to the `std::future` returned by the `std::async`.
+Always keep a reference accessible to the `std::future` returned by the `std::async`.
 Otherwise, your function passed will not launch on separate thread & just execute sync-ly.
 
 The other day, I was spawning `std::future`s to do various things concurrently in a `for-loop` and noticed that everything was being executed synchronously. Then I came to know that I need to store their reference somewhere to be able to access them later. Added a `std::vector<std::future<void>>` in my case (where I pushed all returned `std::future`s).
@@ -86,7 +86,6 @@ Takes away the whole purpose.
 ```
 A std::future came to life!
 Hello from std::future & I'm 2 seconds late!
-a_variable_declared_outside: 69420
 Hey, I'll be first on the console!
 ```
 

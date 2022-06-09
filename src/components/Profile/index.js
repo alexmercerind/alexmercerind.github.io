@@ -64,27 +64,6 @@ export default function Profile() {
           <div className={styles.description}>Good knowledge of asynchronous &amp; object oriented programming.</div>
         </div>
       </div>
-      <div style={{ flex: 1 }} className={styles.profile}>
-        <div className={styles.subheader}>Contacts</div>
-        <div className={styles.description}>Want to hire me or have some feedback? Contact me below.</div>
-        <div className={styles.contacts}>
-          <a target={"__blank"} href={"mailto:saini123hitesh@gmail.com"}>saini123hitesh@gmail.com</a>
-          <a target={"__blank"} href={"mailto:alexmercerind@gmail.com"}>alexmercerind@gmail.com</a>
-          <a target={"__blank"} href={"https://github.com/alexmercerind"}>GitHub</a>
-          <a target={"__blank"} href={"https://twitter.com/alexmercerind"}>Twitter</a>
-          <a target={"__blank"} href={"https://www.linkedin.com/in/hitesh-kumar-saini/"}>LinkedIn</a>
-        </div>
-        <div className={styles.subheader}>Donate</div>
-        <div className={styles.description}>Fund the open source work that I do. Don't forget to mention the project you like. It helps me shift focus towards what you love.</div>
-        <div className={styles.contacts}>
-          <a href={"https://github.com/sponsors/alexmercerind"}>GitHub Sponsors</a>
-          <a href={"https://paypal.me/alexmercerind"}>PayPal</a>
-          <a href={"https://www.buymeacoffee.com/alexmercerind"}>Buy Me A Coffee</a>
-          <a href={"https://patreon.com/harmonoid"}>Patreon</a>
-        </div>
-      </div>
-    </div>
-    <div className={styles.profileCard}>
       <div className={styles.profile}>
         <div className={styles.subheader}>Programming Languages</div>
         <div style={{
@@ -111,6 +90,39 @@ export default function Profile() {
         <div className={styles.description}>Java</div>
         <div className={styles.description}>HTML / CSS</div>
       </div>
+      <div className={styles.profile}>
+        <div className={styles.subheader}>Fun Facts</div>
+        <ul>
+          <li className={styles.description}>I like writing C++. I enjoy writing native code in general.</li>
+          <li className={styles.description}>I think about design a lot. If it's UI isn't good, I won't use it.</li>
+          <li className={styles.description}>I want to work at a good company one day.</li>
+          <li className={styles.description}>My first language was Python, which I learnt at school. Soon I switched to C++. Since then, I've been learning everything by reading docs &amp; articles, watching videos and creating my own software &amp; documentations.</li>
+          <li className={styles.description}>Currently, I'm pursuing bachelor's in information technology at <a href="https://gbpuat.ac.in/">GBPUAT</a>.</li>
+          <li className={styles.description}>I'm 19 years old.</li>
+          <li className={styles.description}>I like reading documentation more than watching tutorial videos.</li>
+        </ul>
+      </div>
+    </div>
+    <div className={styles.profileCard}>
+      <div style={{ flex: 2 }} className={styles.profile}>
+        <div className={styles.subheader}>Contacts</div>
+        <div className={styles.description}>Want to hire me or have some feedback? Contact me below.</div>
+        <div className={styles.contacts}>
+          <a target={"__blank"} href={"mailto:saini123hitesh@gmail.com"}>saini123hitesh@gmail.com</a>
+          <a target={"__blank"} href={"mailto:alexmercerind@gmail.com"}>alexmercerind@gmail.com</a>
+          <a target={"__blank"} href={"https://github.com/alexmercerind"}>GitHub</a>
+          <a target={"__blank"} href={"https://twitter.com/alexmercerind"}>Twitter</a>
+          <a target={"__blank"} href={"https://www.linkedin.com/in/hitesh-kumar-saini/"}>LinkedIn</a>
+        </div>
+        <div className={styles.subheader}>Hire / Donate</div>
+        <div className={styles.description}>Fund the open source work that I do. Don't forget to mention the project you like. It helps me shift focus towards what you love.</div>
+        <div className={styles.contacts}>
+          <a href={"https://github.com/sponsors/alexmercerind"}>GitHub Sponsors</a>
+          <a href={"https://paypal.me/alexmercerind"}>PayPal</a>
+          <a href={"https://www.buymeacoffee.com/alexmercerind"}>Buy Me A Coffee</a>
+          <a href={"https://patreon.com/harmonoid"}>Patreon</a>
+        </div>
+      </div>
       <div style={{ flex: 1 }} className={styles.profile}>
         <div>
           <div className={styles.subheader}>Experience</div>
@@ -124,18 +136,7 @@ export default function Profile() {
           <div className={styles.description}>Flutter developer • Worked on client app UI &amp; state management. Also worked on Firebase integration.</div>
         </div>
       </div>
-      <div className={styles.profile}>
-        <div className={styles.subheader}>Fun Facts</div>
-        <ul>
-          <li className={styles.description}>I like writing C++. I enjoy writing native code in general.</li>
-          <li className={styles.description}>I think about design a lot. If it's UI isn't good, I won't use it.</li>
-          <li className={styles.description}>I want to work at in a good company one day.</li>
-          <li className={styles.description}>My first language was Python, which I learnt at school. Soon I switched to C++. Since then, I've been learning everything by reading docs &amp; articles, watching videos and creating my own software &amp; documentations.</li>
-          <li className={styles.description}>Currently, I'm pursuing bachelor's in information technology at <a href="https://gbpuat.ac.in/">GBPUAT</a>.</li>
-          <li className={styles.description}>I'm 19 years old.</li>
-          <li className={styles.description}>I like reading documentation more than watching tutorial videos.</li>
-        </ul>
-      </div>
+
     </div>
   </div >)
 }
