@@ -46,7 +46,7 @@ function BlogListPage(props) {
         <h1 className={clsx("text--center margin-top--lg margin-bottom--xs", styles.titleText)}>
           Hitesh's Blog &amp; Thoughts About Programming 'n Stuff
         </h1>
-        <p style={{ "textAlign": "center" }}>
+        <p style={{ "textAlign": "center", "marginLeft": "18px", "marginRight": "18px" }}>
           Usually writes here about programming, cool things that he finds related to his tech-stack or rants about life.
         </p>
       </header>
