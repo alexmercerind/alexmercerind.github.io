@@ -2,17 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://alexmercerind.com/blog</id>
     <title>alexmercerind Blog</title>
-    <updated>2022-05-21T00:00:00.000Z</updated>
+    <updated>2022-06-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://alexmercerind.com/blog"/>
     <subtitle>alexmercerind Blog</subtitle>
     <icon>https://alexmercerind.com/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[Animations in Flutter done right [Flutter 2 & 3]]]></title>
+        <id>animations-in-flutter-done-right</id>
+        <link href="https://alexmercerind.com/blog/animations-in-flutter-done-right"/>
+        <updated>2022-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Animations on things drawn on screen & sense of motion that drives the attention of users is really important for a good user experience.]]></summary>
+        <author>
+            <name>Hitesh</name>
+            <uri>https://github.com/alexmercerind</uri>
+        </author>
+        <category label="flutter" term="flutter"/>
+        <category label="animations" term="animations"/>
+        <category label="dart" term="dart"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[C++'s <future>, making async C callbacks functions sync & enjoyable multi-threading]]></title>
-        <id>alexmercerind</id>
-        <link href="https://alexmercerind.com/blog/alexmercerind"/>
+        <id>cpp-future-async-sync-multi-threading</id>
+        <link href="https://alexmercerind.com/blog/cpp-future-async-sync-multi-threading"/>
         <updated>2022-05-21T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I use `` header in C++ very-very often in my code everywhere at this point & wanted to share what's so cool in it.]]></summary>
+        <author>
+            <name>Hitesh</name>
+            <uri>https://github.com/alexmercerind</uri>
+        </author>
         <category label="c++" term="c++"/>
         <category label="std::async" term="std::async"/>
         <category label="multi-threading" term="multi-threading"/>
