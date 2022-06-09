@@ -77,8 +77,10 @@ export default function Profile() {
         <div className={styles.subheader}>Donate</div>
         <div className={styles.description}>Fund the open source work that I do. Don't forget to mention the project you like. It helps me shift focus towards what you love.</div>
         <div className={styles.contacts}>
-          <a href={"https://www.buymeacoffee.com/alexmercerind"}>Buy Me A Coffee</a>
+          <a href={"https://github.com/sponsors/alexmercerind"}>GitHub Sponsors</a>
           <a href={"https://paypal.me/alexmercerind"}>PayPal</a>
+          <a href={"https://www.buymeacoffee.com/alexmercerind"}>Buy Me A Coffee</a>
+          <a href={"https://patreon.com/harmonoid"}>Patreon</a>
         </div>
       </div>
     </div>

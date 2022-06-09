@@ -20,6 +20,10 @@
   font-family: "Segoe UI", "Noto Sans", "Roboto", sans-serif;
 }
 
+navbar {
+  z-index: 5000 !important;
+}
+
 h1 {
   font-family: var(--serif-font);
 }
@@ -30,6 +34,10 @@ h2 {
 
 h3 {
   font-family: var(--serif-font);
+}
+
+.blogPostTitle {
+  font-size: 24px !important;
 }
 
 .main-wrapper {
