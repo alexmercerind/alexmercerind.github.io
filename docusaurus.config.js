@@ -90,7 +90,7 @@ const config = {
           },
           {
             to: "/blog",
-            label: "Blogs",
+            label: "Blog",
             position: "left",
           },
           {
