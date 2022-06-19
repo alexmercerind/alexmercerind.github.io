@@ -105,7 +105,7 @@ export default function Profile() {
     </div>
     <div className={styles.profileCard}>
       <div style={{ flex: 2 }} className={styles.profile}>
-        <div className={styles.subheader}>Contacts</div>
+        <div className={styles.subheader}>Hire</div>
         <div className={styles.description}>Want to hire me or have some feedback? Contact me below.</div>
         <div className={styles.contacts}>
           <a target={"__blank"} href={"mailto:saini123hitesh@gmail.com"}>saini123hitesh@gmail.com</a>
@@ -114,7 +114,7 @@ export default function Profile() {
           <a target={"__blank"} href={"https://twitter.com/alexmercerind"}>Twitter</a>
           <a target={"__blank"} href={"https://www.linkedin.com/in/hitesh-kumar-saini/"}>LinkedIn</a>
         </div>
-        <div className={styles.subheader}>Hire / Donate</div>
+        <div className={styles.subheader}>Donate</div>
         <div className={styles.description}>Fund the open source work that I do. Don't forget to mention the project you like. It helps me shift focus towards what you love.</div>
         <div className={styles.contacts}>
           <a href={"https://github.com/sponsors/alexmercerind"}>GitHub Sponsors</a>
