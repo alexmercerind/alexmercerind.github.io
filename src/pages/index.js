@@ -85,7 +85,7 @@ export default function Home() {
             "Made in Flutter & very strictly follows Material Design animation & UI guidelines.",
             "Uses libmpv C API through dart:ffi for music playback.",
             "Taskbar controls, context-menu integration & System Media Transport Controls for Windows.",
-            "MPRIS controls for Linux, Discord RPC, gapless playback, YouTube support & other features.",
+            "Pitch shifting, speed change, volume boost, Discord RPC, gapless playback, YouTube support, MPRIS controls for Linux, SMTC for Windows & other features.",
             "Currently working on Windows, Linux & Android.",
           ]}
         />
