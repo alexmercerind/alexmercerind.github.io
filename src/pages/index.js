@@ -67,8 +67,9 @@ export default function Home() {
           repository={"harmonoid"}
           description="Elegant music app to play &amp; manage music library. YouTube Music client. Lyrics &amp; Playlists."
           links={{
-            "Download": "https://github.com/harmonoid/harmonoid/releases/latest",
-            "libmpv": "https://mpv.io/",
+            "Website": "https://harmonoid.com/",
+            "Download": "https://harmonoid.com/downloads",
+            "mpv": "https://mpv.io/",
           }}
           images={[
             require('@site/static/img/harmonoid/0.webp').default,
