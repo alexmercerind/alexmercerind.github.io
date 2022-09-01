@@ -8,11 +8,11 @@
     <subtitle>alexmercerind Blog</subtitle>
     <icon>https://alexmercerind.com/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Fucked up storage access in Android 11]]></title>
-        <id>fucked-up-storage-access-in-android-11</id>
-        <link href="https://alexmercerind.com/blog/fucked-up-storage-access-in-android-11"/>
+        <title type="html"><![CDATA[Messed up storage access in Android 11]]></title>
+        <id>messed-up-storage-access-in-android-11</id>
+        <link href="https://alexmercerind.com/blog/messed-up-storage-access-in-android-11"/>
         <updated>2022-09-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Your well known Android operatins system recently introduced Scoped Storage with things like Storage Access Framework & MediaStore.]]></summary>
+        <summary type="html"><![CDATA[Android recently introduced Scoped Storage with things like Storage Access Framework & MediaStore.]]></summary>
         <author>
             <name>Hitesh</name>
             <uri>https://github.com/alexmercerind</uri>

@@ -8,11 +8,11 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[Fucked up storage access in Android 11]]></title>
-            <link>https://alexmercerind.com/blog/fucked-up-storage-access-in-android-11</link>
-            <guid>fucked-up-storage-access-in-android-11</guid>
+            <title><![CDATA[Messed up storage access in Android 11]]></title>
+            <link>https://alexmercerind.com/blog/messed-up-storage-access-in-android-11</link>
+            <guid>messed-up-storage-access-in-android-11</guid>
             <pubDate>Thu, 01 Sep 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Your well known Android operatins system recently introduced Scoped Storage with things like Storage Access Framework & MediaStore.]]></description>
+            <description><![CDATA[Android recently introduced Scoped Storage with things like Storage Access Framework & MediaStore.]]></description>
             <category>flutter</category>
             <category>android</category>
             <category>scoped-storage</category>
