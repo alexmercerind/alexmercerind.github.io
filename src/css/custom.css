@@ -41,7 +41,7 @@ h3 {
 }
 
 .main-wrapper {
-  background-color: #efefef;
+  background-color: #fff;
 }
 
 html[data-theme="dark"] .main-wrapper {

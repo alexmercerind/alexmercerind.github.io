@@ -1,13 +1,13 @@
 ---
-slug: fucked-up-storage-access-in-android-11
+slug: messed-up-storage-access-in-android-11
 authors: alexmercerind
-title: Fucked up storage access in Android 11
+title: Messed up storage access in Android 11
 tags: [flutter, android, scoped-storage, storage-access-framework, media-store, saf]
 ---
 
-Your well known Android operatins system recently introduced [Scoped Storage](https://developer.android.com/about/versions/11/privacy/storage) with things like [Storage Access Framework](https://developer.android.com/guide/topics/providers/document-provider) & [MediaStore](https://developer.android.com/reference/android/provider/MediaStore).
+Android recently introduced [Scoped Storage](https://developer.android.com/about/versions/11/privacy/storage) with things like [Storage Access Framework](https://developer.android.com/guide/topics/providers/document-provider) & [MediaStore](https://developer.android.com/reference/android/provider/MediaStore).
 
-To put it simply, it's entirely fucked up. There are number of use-cases which haven't been covered, I've seen users struggling after Android 10 & developers even more.
+To put it simply, it's entirely messed up. There are number of use-cases which haven't been covered, I've seen users struggling after Android 10 & developers even more.
 
 <!--truncate-->
 
