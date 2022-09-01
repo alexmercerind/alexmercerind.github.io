@@ -4,9 +4,22 @@
         <title>alexmercerind Blog</title>
         <link>https://alexmercerind.com/blog</link>
         <description>alexmercerind Blog</description>
-        <lastBuildDate>Thu, 09 Jun 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Sep 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Fucked up storage access in Android 11]]></title>
+            <link>https://alexmercerind.com/blog/fucked-up-storage-access-in-android-11</link>
+            <guid>fucked-up-storage-access-in-android-11</guid>
+            <pubDate>Thu, 01 Sep 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Your well known Android operatins system recently introduced Scoped Storage with things like Storage Access Framework & MediaStore.]]></description>
+            <category>flutter</category>
+            <category>android</category>
+            <category>scoped-storage</category>
+            <category>storage-access-framework</category>
+            <category>media-store</category>
+            <category>saf</category>
+        </item>
         <item>
             <title><![CDATA[Animations in Flutter done right [Flutter 2 & 3]]]></title>
             <link>https://alexmercerind.com/blog/animations-in-flutter-done-right</link>

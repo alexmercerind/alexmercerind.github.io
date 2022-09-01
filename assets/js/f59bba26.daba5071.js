@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkalexmercerind_github_io=self.webpackChunkalexmercerind_github_io||[]).push([[7796],{6690:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/storage-access-framework","name":"storage-access-framework","count":1,"permalink":"/blog/tags/storage-access-framework"}')}}]);

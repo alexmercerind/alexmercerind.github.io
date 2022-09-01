@@ -2,11 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://alexmercerind.com/blog</id>
     <title>alexmercerind Blog</title>
-    <updated>2022-06-09T00:00:00.000Z</updated>
+    <updated>2022-09-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://alexmercerind.com/blog"/>
     <subtitle>alexmercerind Blog</subtitle>
     <icon>https://alexmercerind.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Fucked up storage access in Android 11]]></title>
+        <id>fucked-up-storage-access-in-android-11</id>
+        <link href="https://alexmercerind.com/blog/fucked-up-storage-access-in-android-11"/>
+        <updated>2022-09-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Your well known Android operatins system recently introduced Scoped Storage with things like Storage Access Framework & MediaStore.]]></summary>
+        <author>
+            <name>Hitesh</name>
+            <uri>https://github.com/alexmercerind</uri>
+        </author>
+        <category label="flutter" term="flutter"/>
+        <category label="android" term="android"/>
+        <category label="scoped-storage" term="scoped-storage"/>
+        <category label="storage-access-framework" term="storage-access-framework"/>
+        <category label="media-store" term="media-store"/>
+        <category label="saf" term="saf"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Animations in Flutter done right [Flutter 2 & 3]]]></title>
         <id>animations-in-flutter-done-right</id>

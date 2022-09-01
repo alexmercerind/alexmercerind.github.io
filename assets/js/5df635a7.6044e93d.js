@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkalexmercerind_github_io=self.webpackChunkalexmercerind_github_io||[]).push([[228],{5844:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/animations","name":"animations","count":1,"permalink":"/blog/tags/animations"}')}}]);
