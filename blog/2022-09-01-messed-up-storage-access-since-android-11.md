@@ -67,7 +67,7 @@ After Android's this migration to it's "specialized" APIs, it renders applicatio
 
 ## Here's The Point
 
-You Google & your Android is the REAL THREAT TO USER PRIVACY, not some passionate application developer building a good digital experience for users while not even possibly requesting internet permission. I never know when my microphone or camera is active or being recorded to feed your advertising system.
+_Google & it's Android is the REAL THREAT TO USER PRIVACY, not some passionate application developer building a good digital experience for users while not even possibly requesting internet permission. I never know when my microphone or camera is active or being recorded to feed your advertising system._
 
 One of the biggest reasons I liked Android over iOS was it's open-ness & ability to anything. Looks like there's going to be a big demand of [Linux smartphones](https://itsfoss.com/linux-phones/) in the market soon. I don't want yet another iOS.
 
