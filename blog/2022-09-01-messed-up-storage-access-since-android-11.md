@@ -18,10 +18,6 @@ Flutter is a framework in/for Dart programming language, which also allows nativ
 
 Now to the actual mess, before Android 10 i.e. Android 9 or lower, any app that you install on your system could access your phone's storage, the directories & various files in it, without any consent (obviously not very privacy friendly).
 
-**NOTE:** Android still allows accessing all of the filesystem (on API 31 or higher), using [`MANAGE_EXTERNAL_STORAGE`](https://support.google.com/googleplay/android-developer/answer/10467955?hl=en). But the chances are, your app will be definitely disqualified from entering Play Store. Only file managers, anti-viruses & backup utilities etc. will be allowed with this permission.
-
-And you never know, what if they even remove [`MANAGE_EXTERNAL_STORAGE`](https://support.google.com/googleplay/android-developer/answer/10467955?hl=en) in future updates.
-
 ## History & Present
 
 - During API 28 or lower (Android 9 or lower), a developer had access to file system.
@@ -31,6 +27,10 @@ And you never know, what if they even remove [`MANAGE_EXTERNAL_STORAGE`](https:/
 This has been done for "user privacy", but please continue reading till [Here's The Point](#heres-the-point).
 
 Google & Android team thought, it's not fun enough so they entirely removed the capability to access, list or read a file/directory using it's path. I know it's still possible to use file paths using some trickery, but for the most part it has been told by the official documentation to not use file paths at all, when referencing any media or file on the storage. So, what are they recommending? [Scoped Storage](https://www.androidcentral.com/what-scoped-storage) with things like [Storage Access Framework](https://developer.android.com/guide/topics/providers/document-provider) & [MediaStore](https://developer.android.com/reference/android/provider/MediaStore). Let's cover these in detail.
+
+**NOTE:** Android still allows accessing all of the filesystem (on API 31 or higher), using [`MANAGE_EXTERNAL_STORAGE`](https://support.google.com/googleplay/android-developer/answer/10467955?hl=en). But the chances are, your app will be definitely disqualified from entering Play Store. Only file managers, anti-viruses & backup utilities etc. will be allowed with this permission.
+
+And you never know, what if they even remove [`MANAGE_EXTERNAL_STORAGE`](https://support.google.com/googleplay/android-developer/answer/10467955?hl=en) in future updates.
 
 In summary, here are few core points:
 
