@@ -1,7 +1,7 @@
 ---
-slug: messed-up-storage-access-in-android-11
+slug: messed-up-storage-access-since-android-11
 authors: alexmercerind
-title: Messed up storage access in Android 11
+title: Messed up storage access since Android 11
 tags: [flutter, android, scoped-storage, storage-access-framework, media-store, saf]
 ---
 
