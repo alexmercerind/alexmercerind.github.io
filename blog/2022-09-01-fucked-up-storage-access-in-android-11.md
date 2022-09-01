@@ -18,7 +18,9 @@ Flutter is a framework in/for Dart programming language, which also allows nativ
 
 Now to the actual mess, before Android 10 i.e. Android 9 or lower, any app that you install on your system could access your phone's storage, the directories & various files in it, without any consent (obviously not very privacy friendly).
 
-Android **still allows** accessing all of the filesystem (on API 31 or higher), using [`MANAGE_EXTERNAL_STORAGE` permission](https://support.google.com/googleplay/android-developer/answer/10467955?hl=en). But the chances are, your app will be definitely disqualified from entering Play Store. And you never know, what if they even remove this in future. Only file managers, anti-viruses & backup utilities etc. will be allowed with this permission.
+**NOTE:** Android still allows accessing all of the filesystem (on API 31 or higher), using [`MANAGE_EXTERNAL_STORAGE`](https://support.google.com/googleplay/android-developer/answer/10467955?hl=en). But the chances are, your app will be definitely disqualified from entering Play Store. Only file managers, anti-viruses & backup utilities etc. will be allowed with this permission.
+
+And you never know, what if they even remove [`MANAGE_EXTERNAL_STORAGE`](https://support.google.com/googleplay/android-developer/answer/10467955?hl=en) in future updates.
 
 ## History & Present
 
@@ -106,3 +108,9 @@ As I said at the beginning of this, I'm actually a Flutter developer & mainly I 
 From my experience (so far) working with other Flutter developers & being part of community, I don't think average or even intermediate Flutter developer has any knowledge of device-specific APIs & garbage like [Storage Access Framework](https://developer.android.com/guide/topics/providers/document-provider) & [MediaStore](https://developer.android.com/reference/android/provider/MediaStore) at all (because these are part of Android SDK).
 
 This means re-writing all the functionality specifically for Android separately because APIs from [`dart:io`](https://api.flutter.dev/flutter/dart-io/dart-io-library.html) or libraries written completely in Dart or leveraging FFI likely won't work at all for your purpose.
+
+Working with Android SDK has always been painful, deprecated APIs left & right after every release. As someone who never was into Android development specifically, you have no clear idea where to begin & where to end. Jetpack Compose, XML, Kotlin, Java alongside these random things like content-provider, content-resolver, media-store, SAF being added for no reason, while core things like file system handling being removed from the operating system & API.
+
+For now, I have zero motivation to migrate to this "new & better" API which will take away many cool features of my application. Let's see if I have to open Android Studio & contribute to global warming while running it.
+
+Thanks for reading! No features this year, just refactor.
