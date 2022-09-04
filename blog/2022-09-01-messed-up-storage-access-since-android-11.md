@@ -22,7 +22,7 @@ Now to the actual mess, before Android 10 i.e. Android 9 or lower, any app that 
 
 - During API 28 or lower (Android 9 or lower), a developer had access to file system.
 - After API 29 (Android 10), file system access is disabled by default everything is interpreted as `content://` URI instead of `file://`. During this time they provided a special flag to opt out of this scoped storage & use good-old file system methods. See: [`requestLegacyExternalStorage`](https://developer.android.com/training/data-storage/use-cases#opt-out-in-production-app).
-- After API 20 (Android 11+), you can no longer access `file://` or file-system at all, unless you keep targetting API 29.
+- After API 30 (Android 11+), you can no longer access `file://` or file-system at all, unless you keep targetting API 29.
 
 This has been done for "user privacy", but please continue reading till [Here's The Point](#heres-the-point).
 
