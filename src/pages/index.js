@@ -63,30 +63,29 @@ export default function Home() {
         <br />
         <Project
           index={0}
-          maintainer={"alexmercerind"}
+          maintainer={"harmonoid"}
           repository={"harmonoid"}
-          description="Elegant music app to play &amp; manage music library. YouTube Music client. Lyrics &amp; Playlists."
+          description="Plays & manages your music library. Looks beautiful & juicy. Playlists, visuals, synced lyrics, pitch shift, volume boost & more."
           links={{
             "Website": "https://harmonoid.com/",
             "Download": "https://harmonoid.com/downloads",
             "mpv": "https://mpv.io/",
+            "Google Play": "https://play.google.com/store/apps/details?id=com.alexmercerind.harmonoid",
           }}
           images={[
-            require('@site/static/img/harmonoid/0.webp').default,
-            require('@site/static/img/harmonoid/1.webp').default,
-            require('@site/static/img/harmonoid/2.webp').default,
-            require('@site/static/img/harmonoid/3.webp').default,
-            require('@site/static/img/harmonoid/5.webp').default,
-            require('@site/static/img/harmonoid/0.jpeg.webp').default,
-            require('@site/static/img/harmonoid/1.jpeg.webp').default,
+            "https://github.com/harmonoid/harmonoid/blob/assets/windows/0.webp?raw=true",
+            "https://github.com/harmonoid/harmonoid/blob/assets/windows/1.webp?raw=true",
+            "https://github.com/harmonoid/harmonoid/blob/assets/windows/2.webp?raw=true",
+            "https://github.com/harmonoid/harmonoid/blob/assets/windows/3.webp?raw=true",
+            "https://github.com/harmonoid/harmonoid/blob/assets/windows/4.webp?raw=true",
           ]}
           extraLanguages={["C"]}
           achievements={[
-            "Indexes updates music into albums, artists based on metadata tags. Capable of indexing 20 songs per second & caching.",
-            "Made in Flutter & very strictly follows Material Design animation & UI guidelines.",
-            "Uses libmpv C API through dart:ffi for music playback.",
+            "Indexes & updates music into albums, artists, genres based on metadata tags. Capable of indexing 50 songs/second & future caching.",
+            "Made in Flutter / Dart & very strictly follows Material Design animation & UI guidelines.",
+            "mpv based music playback for strong format support (on Linux & Windows) using dart:ffi.",
             "Taskbar controls, context-menu integration & System Media Transport Controls for Windows.",
-            "Pitch shifting, speed change, volume boost, Discord RPC, gapless playback, YouTube support, MPRIS controls for Linux, SMTC for Windows & other features.",
+            "Pitch shifting, speed change, volume boost, Discord RPC, gapless playback, YouTube support, MPRIS controls for Linux & more.",
             "Currently working on Windows, Linux & Android.",
           ]}
         />
@@ -97,7 +96,7 @@ export default function Home() {
           description="Flutter audio/video playback, broadcast &amp; recording library for Windows, Linux &amp; macOS with playlist control. Native C/C++ &amp; libvlc."
           links={{
             "pub.dev": "https://pub.dev/packages/dart_vlc",
-            "videoLAN retweet": "https://twitter.com/videolan/status/1371774126080286722",
+            "VideoLAN retweet": "https://twitter.com/videolan/status/1371774126080286722",
             "libVLC++": "https://github.com/videolan/libvlcpp",
           }}
           images={[
