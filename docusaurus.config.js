@@ -16,10 +16,15 @@ const config = {
   organizationName: "alexmercerind",
   projectName: "alexmercerind.github.io",
   deploymentBranch: "gh-pages",
+  stylesheets: [
+    "https://fonts.googleapis.com/icon?family=Material+Icons",
+    "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@100;300;400&display=swap",
+  ],
   scripts: [
     {
-      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7639513162093316',
-      crossorigin: 'anonymous',
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7639513162093316",
+      crossorigin: "anonymous",
     },
   ],
   presets: [
@@ -41,7 +46,7 @@ const config = {
           customCss: require.resolve("./src/css/custom.css"),
         },
         googleAnalytics: {
-          trackingID: 'UA-222584022-1',
+          trackingID: "UA-222584022-1",
           anonymizeIP: false,
         },
       }),
@@ -53,9 +58,10 @@ const config = {
     ({
       metadata: [
         {
-          name: 'keywords',
-          content: 'software, software-development, programming, flutter, react, alexmercerind',
-        }
+          name: "keywords",
+          content:
+            "software, software-development, programming, flutter, react, alexmercerind",
+        },
       ],
       tableOfContents: {
         minHeadingLevel: 2,
@@ -146,10 +152,10 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Hitesh Kumar Saini. Built with React.js & Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Hitesh Kumar Saini. Built with React.js.`,
       },
       prism: {
-        additionalLanguages: ['dart'],
+        additionalLanguages: ["dart"],
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
