@@ -95,16 +95,17 @@ export default function Profile() {
         <ul>
           <li className={styles.description}>I like writing C++. I enjoy writing native code in general.</li>
           <li className={styles.description}>I think about design a lot. If it's UI isn't good, I won't use it.</li>
-          <li className={styles.description}>I want to work at a good company one day.</li>
+          <li className={styles.description}>I consider animations &amp; motion an important part of the UI.</li>
           <li className={styles.description}>My first language was Python, which I learnt at school. Soon I switched to C++. Since then, I've been learning everything by reading docs &amp; articles, watching videos and creating my own software &amp; documentations.</li>
-          <li className={styles.description}>Currently, I'm pursuing bachelor's in information technology at <a href="https://gbpuat.ac.in/">GBPUAT</a>.</li>
+          <li className={styles.description}>Currently, I'm pursuing bachelor's in information technology at <a target="_blank" href="https://gbpuat.ac.in/">GBPUAT</a>.</li>
           <li className={styles.description}>I'm 19 years old.</li>
           <li className={styles.description}>I like reading documentation more than watching tutorial videos.</li>
+          <li className={styles.description}>I like Purple! Checkout this awesome <a target="_blank" href="https://rsms.me/inter/">Inter font family</a>.</li>
         </ul>
       </div>
     </div>
     <div className={styles.profileCard}>
-      <div style={{ flex: 2 }} className={styles.profile}>
+      <div className={styles.profile}>
         <div className={styles.subheader}>Hire</div>
         <div className={styles.description}>Want to hire me or have some feedback? Contact me below.</div>
         <div className={styles.contacts}>
@@ -126,9 +127,11 @@ export default function Profile() {
       <div style={{ flex: 1 }} className={styles.profile}>
         <div>
           <div className={styles.subheader}>Experience</div>
-          <div className={styles.detail}><a target={"__blank"} href={"https://github.com/alexmercerind"}>Open Source</a> • Always • 2019 - Present</div>
-          <div className={styles.description}>Building/maintaining libraries used by number of projects worldwide &amp; apps loved by many. Contributing to other awesome projects.</div>
-          <div className={styles.detail}><a target={"__blank"} href={"https://presence.is/beta"}>Presence</a> • Part-Time • September 2021 - Present<br /></div>
+          <div className={styles.detail}><a target={"__blank"} href={"https://github.com/alexmercerind"}>Open Source</a> • Always • 2018 - Present</div>
+          <div className={styles.description}>Building &amp; maintaining libraries used by number of projects worldwide &amp; apps loved by many.<br />Contributing to other awesome projects. Keeping this massive infrastructure moving.</div>
+          <div className={styles.detail}><a target={"__blank"} href={"https://bluecherrydvr.com"}>Bluecherry DVR</a> • Part-Time • May 2022 - Present<br /></div>
+          <div className={styles.description}>Flutter developer • Working on cross-platform DVR client for Windows, Linux, macOS, Android &amp; iOS.</div>
+          <div className={styles.detail}><a target={"__blank"} href={"https://presence.is/beta"}>Presence</a> • Part-Time • September 2021 - February 2022<br /></div>
           <div className={styles.description}>Flutter developer • The social messaging app which is redefining the way people stay online and communicate with others.</div>
           <div className={styles.detail}><a target={"__blank"} href={"https://hzplayer.com"}>SYQEL</a> • Intern • May 2021 - July 2021<br /></div>
           <div className={styles.description}>Flutter developer • Wrote cross platform music player with many awesome features &amp; beautiful UI, HZ Player.</div>
@@ -138,5 +141,5 @@ export default function Profile() {
       </div>
 
     </div>
-  </div >)
+  </div >);
 }
