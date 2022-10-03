@@ -85,9 +85,9 @@ export default function Home() {
             "Indexes & updates music into albums, artists, genres based on metadata tags. Capable of indexing 50 songs/second & future caching.",
             "mpv based music playback for strong format support (on Linux & Windows) using dart:ffi.",
             "Taskbar controls, context-menu integration & System Media Transport Controls for Windows.",
-            "Pitch shifting, speed change, .lrc lyrics support, volume boost, Discord RPC, gapless playback",
-            "YouTube support, MPRIS controls for Linux & more",
-            "I worked hard to make project work on all 3 platforms, Windows, Linux & Android",
+            "Pitch shifting, speed change, .lrc lyrics support, volume boost, Discord RPC, gapless playback.",
+            "YouTube support, MPRIS controls for Linux & more.",
+            "I worked hard to make project work on all 3 platforms, Windows, Linux & Android.",
             "I used Provider for state management & code has singletons at places.",
             "Internally used packages & plugins are unit tested. Has over ~40k downloads combining Windows, Linux & Android."
           ]}
