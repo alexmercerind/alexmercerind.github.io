@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkalexmercerind_github_io=self.webpackChunkalexmercerind_github_io||[]).push([[5077],{4100:e=>{e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/multi-threading","name":"multi-threading","count":1,"permalink":"/blog/tags/multi-threading"}')}}]);

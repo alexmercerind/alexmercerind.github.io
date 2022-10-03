@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkalexmercerind_github_io=self.webpackChunkalexmercerind_github_io||[]).push([[490],{4709:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/std-async","name":"std::async","count":1,"permalink":"/blog/tags/std-async"}')}}]);
