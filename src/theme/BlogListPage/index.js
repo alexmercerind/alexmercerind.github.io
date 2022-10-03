@@ -12,7 +12,6 @@ import Layout from "@theme/Layout";
 import BlogPostItem from "@theme/BlogPostItem";
 import BlogListPaginator from "@theme/BlogListPaginator";
 import { ThemeClassNames } from "@docusaurus/theme-common";
-import Head from "@docusaurus/Head";
 
 import styles from "./styles.module.css";
 import clsx from "clsx";
@@ -36,12 +35,6 @@ function BlogListPage(props) {
         // assign unique search tag to exclude this page from search results!
         tag: "blog_posts_list",
       }}>
-      <Head>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
-        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"></link>
-      </Head>
       <header>
         <h1 className={clsx("text--center margin-top--lg margin-bottom--xs", styles.titleText)}>
           Hitesh's Blog &amp; Thoughts About Programming 'n Stuff

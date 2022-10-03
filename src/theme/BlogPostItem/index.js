@@ -16,7 +16,6 @@ import MDXComponents from "@theme/MDXComponents";
 import Seo from "@theme/Seo";
 import BlogPostAuthors from "@theme/BlogPostAuthors";
 import TagsListInline from "@theme/TagsListInline";
-import Head from "@docusaurus/Head";
 
 import styles from "./styles.module.css";
 
@@ -128,12 +127,6 @@ function BlogPostItem(props) {
   return (
     <>
       <Seo {...{ keywords, image: assets.image }} />
-      <Head>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"></link>
-      </Head>
       <article
         itemProp="blogPost"
         itemScope

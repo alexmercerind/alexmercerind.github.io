@@ -70,7 +70,7 @@ export default function Home() {
             "Website": "https://harmonoid.com/",
             "Download": "https://harmonoid.com/downloads",
             "mpv": "https://mpv.io/",
-            "Google Play": "https://play.google.com/store/apps/details?id=com.alexmercerind.harmonoid",
+            "Google Play (recently published)": "https://play.google.com/store/apps/details?id=com.alexmercerind.harmonoid",
           }}
           images={[
             "https://github.com/harmonoid/harmonoid/blob/assets/windows/0.webp?raw=true",
@@ -79,14 +79,17 @@ export default function Home() {
             "https://github.com/harmonoid/harmonoid/blob/assets/windows/3.webp?raw=true",
             "https://github.com/harmonoid/harmonoid/blob/assets/windows/4.webp?raw=true",
           ]}
-          extraLanguages={["C"]}
+          extraLanguages={["Dart", "C"]}
           achievements={[
+            "I made this in Flutter / Dart & very strictly follows Material Design animation & UI guidelines.",
             "Indexes & updates music into albums, artists, genres based on metadata tags. Capable of indexing 50 songs/second & future caching.",
-            "Made in Flutter / Dart & very strictly follows Material Design animation & UI guidelines.",
             "mpv based music playback for strong format support (on Linux & Windows) using dart:ffi.",
             "Taskbar controls, context-menu integration & System Media Transport Controls for Windows.",
-            "Pitch shifting, speed change, volume boost, Discord RPC, gapless playback, YouTube support, MPRIS controls for Linux & more.",
-            "Currently working on Windows, Linux & Android.",
+            "Pitch shifting, speed change, .lrc lyrics support, volume boost, Discord RPC, gapless playback",
+            "YouTube support, MPRIS controls for Linux & more",
+            "I worked hard to make project work on all 3 platforms, Windows, Linux & Android",
+            "I used Provider for state management & code has singletons at places.",
+            "Internally used packages & plugins are unit tested. Has over ~40k downloads combining Windows, Linux & Android."
           ]}
         />
         <Project
@@ -106,7 +109,7 @@ export default function Home() {
           extraLanguages={["C++"]}
           achievements={[
             "First ever media playback library for Flutter and Dart apps on Windows, Linux & macOS.",
-            "Has C++ based wrapper around libVLC++ & libVLC.",
+            "I wrote a C++ based wrapper around libVLC++ & libVLC.",
             "Uses FFI & dart_api.h for calling libVLC APIs & platform channels for texture registrar APIs.",
             "Most libVLC APIs are exposed to Dart in a nice high-level style.",
           ]}
@@ -149,26 +152,6 @@ export default function Home() {
           ]}
         />
         <Project
-          index={3}
-          maintainer={"alexmercerind"}
-          repository={"image_palette_generator"}
-          description="Generate a color palette from an image or find dominant color."
-          links={{
-            "Repository": "https://github.com/alexmercerind/image_palette_generator",
-            "exoquant": "https://github.com/exoticorn/exoquant",
-            "stb_image.h": "https://github.com/nothings/stb/blob/master/stb_image.h",
-          }}
-          images={[
-            require("@site/static/img/image_palette_generator.jpg").default,
-          ]}
-          achievements={[
-            "Extracts a vibrant color palette (using image quantization), color tones (based on averaging) or dominant color from image.",
-            "Object oriented & friendly to use.",
-            "Capable of loading encoded image formats using stb_image.h",
-            "Performant & efficient. Rescales large images to a smaller size before processing.",
-          ]}
-        />
-        <Project
           index={4}
           maintainer={"alexmercerind"}
           repository={"flutter_media_metadata"}
@@ -206,7 +189,7 @@ export default function Home() {
           index={6}
           maintainer={"alexmercerind"}
           repository={"desktoasts"}
-          description="A Dart FFI package to send toasts on Windows. Written in C++, based on WinToast."
+          description="[Deprecated] A Dart FFI package to send toasts on Windows. Written in C++, based on WinToast."
           links={{
             "pub.dev": "https://pub.dev/packages/desktoasts",
             "WinToast": "https://github.com/mohabouje/WinToast",
@@ -226,7 +209,7 @@ export default function Home() {
           index={7}
           maintainer={"harmonoid"}
           repository={"libwinmedia"}
-          description="[Archived] A cross-platform simple media playback library for C/C++."
+          description="[Deprecated] A cross-platform simple media playback library for C/C++."
           links={{
             "libwinmedia": "https://github.com/harmonoid/libwinmedia",
             "libwinmedia-py": "https://github.com/mytja/libwinmedia-py",
@@ -246,7 +229,7 @@ export default function Home() {
           index={8}
           maintainer={"alexmercerind"}
           repository={"youtube-search-python"}
-          description="Search for YouTube videos, channels &amp; playlists. Get video &amp; playlist info using link. Get search suggestions. WITHOUT YouTube Data API v3."
+          description="[Deprecated] Search for YouTube videos, channels &amp; playlists. Get video &amp; playlist info using link. Get search suggestions. WITHOUT YouTube Data API v3."
           links={{
             "PyPI": "https://github.com/alexmercerind",
           }}
@@ -261,7 +244,7 @@ export default function Home() {
           index={9}
           maintainer={"alexmercerind"}
           repository={"flutter_audio_desktop"}
-          description="An audio playback library for Flutter Desktop. Supports Windows &amp; Linux. Based on miniaudio."
+          description="[Deprecated] An audio playback library for Flutter Desktop. Supports Windows &amp; Linux. Based on miniaudio."
           links={{
             "dart_vlc": "https://pub.dev/packages/dart_vlc",
             "miniaudio": "https://github.com/mackron/miniaudio",
@@ -273,6 +256,26 @@ export default function Home() {
             "Got mentioned in the official Flutter medium article about Flutter for Windows.",
             "One of the very first plugins ever made for Flutter Windows.",
             "Uses miniaudio in C++ for low level cross platform audio playback APIs."
+          ]}
+        />
+        <Project
+          index={3}
+          maintainer={"alexmercerind"}
+          repository={"image_palette_generator"}
+          description="Generate a color palette from an image or find dominant color."
+          links={{
+            "Repository": "https://github.com/alexmercerind/image_palette_generator",
+            "exoquant": "https://github.com/exoticorn/exoquant",
+            "stb_image.h": "https://github.com/nothings/stb/blob/master/stb_image.h",
+          }}
+          images={[
+            require("@site/static/img/image_palette_generator.jpg").default,
+          ]}
+          achievements={[
+            "Extracts a vibrant color palette (using image quantization), color tones (based on averaging) or dominant color from image.",
+            "Object oriented & friendly to use.",
+            "Capable of loading encoded image formats using stb_image.h",
+            "Performant & efficient. Rescales large images to a smaller size before processing.",
           ]}
         />
       </div>
