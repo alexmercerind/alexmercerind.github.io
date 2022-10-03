@@ -24,18 +24,22 @@
 }
 
 .blogCard {
+  box-sizing: content-box;
   z-index: 1000 !important;
   margin-bottom: 10px;
   display: inline-block;
-  width: 100%;
+  width: calc(100% - 8px);
   background: #ffffff;
   border-radius: 4px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   transition: 0.3s;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
 }
 
 html[data-theme="dark"] .blogCard {
-  background: rgba(255, 255, 255, 0.09);
+  background: #242424;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
