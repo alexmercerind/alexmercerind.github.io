@@ -79,8 +79,6 @@ Okay, privacy is a good thing. BUT, why on earth is it implemented using [Storag
 
 **Just restrict access to file contents or file system unless user consented (probably based on mime or file-extension), while keeping filesystem API usage available. As simple as that.**
 
-What an actual API desigining... 🤓
-
 As a user, I think everyone quite literally understands & knows what a directory structure & file system looks like. I cannot comprehend what's the necessity to build these unnecessary abstractions over the normal file-system access like every operating system provides.
 Not providing developers access to thing as common as file-system, you're simply breaking the norm. This simply means that you can't use your existing logic, code & libraries which you use for other platforms. Since I'm a Flutter developer, I believe in unifying the APIs & being as less platform specific as possible.
 

@@ -5,11 +5,11 @@ title: Animations in Flutter done right [Flutter 2 & 3]
 tags: [flutter, animations, dart]
 ---
 
-Animations on things drawn on screen & sense of motion that drives the attention of users is really important for a good user experience.
+Animations are really important! It gives the sense of motion that drives the attention of users.
 
 <!--truncate-->
 
-Since [Flutter](https://flutter.dev/) draws everything pixel-by-pixel, it offers a lot of ways by which a really-really rich experience can be achieved either it be animations, painting something entirely custom or customization options available to existing `Widget`s.
+Since [Flutter](https://flutter.dev/) draws everything pixel-by-pixel, it offers a lot of ways by which a really-really rich experience can be made.
 
 ## The 5 Ways
 
