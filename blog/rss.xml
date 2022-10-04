@@ -25,7 +25,7 @@
             <link>https://alexmercerind.com/blog/animations-in-flutter-done-right</link>
             <guid>animations-in-flutter-done-right</guid>
             <pubDate>Thu, 09 Jun 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Animations on things drawn on screen & sense of motion that drives the attention of users is really important for a good user experience.]]></description>
+            <description><![CDATA[Animations are really important! It gives the sense of motion that drives the attention of users.]]></description>
             <category>flutter</category>
             <category>animations</category>
             <category>dart</category>
@@ -35,7 +35,7 @@
             <link>https://alexmercerind.com/blog/cpp-future-async-sync-multi-threading</link>
             <guid>cpp-future-async-sync-multi-threading</guid>
             <pubDate>Sat, 21 May 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[I use `` header in C++ very-very often in my code everywhere at this point & wanted to share what's so cool in it.]]></description>
+            <description><![CDATA[I use `` header very-very often in my C++ code everywhere at this point & wanted to share what's so cool in it.]]></description>
             <category>c++</category>
             <category>std::async</category>
             <category>multi-threading</category>
