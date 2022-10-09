@@ -12,7 +12,7 @@
             <link>https://alexmercerind.com/blog/my-view-rust-cpp-linux-2022</link>
             <guid>my-view-rust-cpp-linux-2022</guid>
             <pubDate>Sun, 09 Oct 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Rust is actually good, safer code better warnings.]]></description>
+            <description><![CDATA[Rust is actually a better "systems programming language", helps developers to write safer code & has better compile-time warnings.]]></description>
             <category>rust</category>
             <category>linux</category>
             <category>linux-kernel</category>

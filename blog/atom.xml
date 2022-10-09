@@ -12,7 +12,7 @@
         <id>my-view-rust-cpp-linux-2022</id>
         <link href="https://alexmercerind.com/blog/my-view-rust-cpp-linux-2022"/>
         <updated>2022-10-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Rust is actually good, safer code better warnings.]]></summary>
+        <summary type="html"><![CDATA[Rust is actually a better "systems programming language", helps developers to write safer code & has better compile-time warnings.]]></summary>
         <author>
             <name>Hitesh</name>
             <uri>https://github.com/alexmercerind</uri>
