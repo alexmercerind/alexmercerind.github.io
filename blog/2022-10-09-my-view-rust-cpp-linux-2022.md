@@ -5,7 +5,7 @@ title: "My View: Rust, C++, Linux Kernel & 2022"
 tags: [rust, linux, linux-kernel, cpp, c, 2022, windows]
 ---
 
-Rust is actually good, safer code better warnings.
+Rust is actually a better "systems programming language", helps developers to write safer code & has better compile-time warnings.
 BUT, here's my point...
 
 <!--truncate-->
