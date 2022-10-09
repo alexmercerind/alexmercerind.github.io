@@ -19,6 +19,10 @@ However, for consuming non-media files from your users' devices, you need to use
 
 I delegated my methods or API usages to use [Storage Access Framework](https://developer.android.com/guide/topics/providers/document-provider) & [MediaStore](https://developer.android.com/reference/android/provider/MediaStore) wherever it was necessary. It took time to refactor my code, but not that much _as I anticipated initially_. This process made me much familiar with the new Android storage requirements & practices, which will be useful for me in future.
 
+This video will answer more of your questions:
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/UnJ3amzJM94"></iframe>
+
 ## The Situation
 
 To begin with, first of all, I won't call myself an Android developer because I never target Android primarily from my codebase. I'm instead a [Flutter](http://flutter.dev/) developer, a specialized framework which allows to build cross-platform applications from a single codebase, while leveraging native functionalities like permissions, notifications & media playback etc. through a mechanism we refer as [platform channels](https://docs.flutter.dev/development/platform-integration/platform-channels).
