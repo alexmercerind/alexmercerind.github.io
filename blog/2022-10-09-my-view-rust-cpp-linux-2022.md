@@ -31,7 +31,7 @@ I don't ever write C/C++ because _I enjoy it_ but because I want to:
 
 It's a massive infrastructure that's been built over the years & ton of work has gone into creating these libraries & utilities, which we cannot just abandon. There's no way going back and doing everything again. And, even if every company decides to afford this cost of rewrite, I'm pretty sure the new "safer" Rust re-factored codebases will actually bring more regressions, which will take more time to get patched.
 
-On the other hand, you can make most new C/C++ similarly strict as Rust compiler by setting the warning level anyway. If we're talking memory safety, we have smart pointers.
+On the other hand, you can make most new C/C++ compilers similarly strict as Rust compiler by setting the warning level anyway. If we're talking memory safety, we have smart pointers.
 
 Rust is still a decent language, use it if you can. But you can't forget the fact that you'll still need to depend upon existing C/C++ stuff/libraries (atleast from my vision). Migrate to Rust if your company can afford it, maybe we can't get there slowly. But, I believe there is a very thin chance this will ever happen.
 
