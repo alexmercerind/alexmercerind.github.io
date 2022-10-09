@@ -1,7 +1,7 @@
 ---
 slug: my-view-rust-cpp-linux-2022
 authors: alexmercerind
-title: "My View: Rust, C++, Linux Kernel & 2022"
+title: "My View: Rust, C++, Linux Kernel, Windows & 2022"
 tags: [rust, linux, linux-kernel, cpp, c, 2022, windows]
 ---
 
@@ -13,7 +13,7 @@ BUT, here's my point...
 If you came to read this page, I'm pretty sure you already know me & you also know that I have a ton of C/C++ code in my public repositories & libraries/packages. I mainly only write C or C++ when there is no other choice, like for exposing some operating system API or any other native library to Flutter or Dart. So that I can use that functionality in my app. Considering all Windows APIs either WinRT (Windows Runtime Library or [C++/WinRT](https://github.com/microsoft/cppwinrt)) or Win32 are in C/C++ anyway, I don't find any point in bringing yet another layer of Rust in between.
 
 One can argue that there's a new [Windows crate for Rust](https://crates.io/crates/windows) now, however isn't that still calling those same "unsafe" APIs?
-I think this crate is only useful when your app itself is in Rust, maybe [Tauri](https://tauri.app/) or [Iced](https://github.com/iced-rs/iced)? This can give Rust developers a starting point for consuming Windows APIs (like [C++/WinRT](https://github.com/microsoft/cppwinrt) does for C++, _ahem, ahem_ Standard C++). And, both [Windows crate for Rust](https://crates.io/crates/windows) & [C++/WinRT](https://github.com/microsoft/cppwinrt) are made by [Kenny Kerr](https://github.com/kennykerr), Engineer on the Windows team at Microsoft. 
+I think this crate is only useful when your app itself is in Rust, maybe [Tauri](https://tauri.app/) or [Iced](https://github.com/iced-rs/iced)? This can give Rust developers a starting point for consuming Windows APIs (like [C++/WinRT](https://github.com/microsoft/cppwinrt) does for C++, _ahem, ahem_ Standard C++). BTW, both [Windows crate for Rust](https://crates.io/crates/windows) & [C++/WinRT](https://github.com/microsoft/cppwinrt) are made by [Kenny Kerr](https://github.com/kennykerr), Engineer on the Windows team at Microsoft. 
 
 ## Actual Point
 
