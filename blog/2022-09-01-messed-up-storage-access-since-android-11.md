@@ -11,6 +11,14 @@ To put it simply, it's entirely messed up. There are number of use-cases which h
 
 <!--truncate-->
 
+## UPDATE:
+
+I actually migrated [my project](https://github.com/harmonoid/harmonoid) to scoped storage. Google has kept the access the file system in Android 11 (SDK 30 or higher), but your application will be only able to "see" the media files (FITS MY PURPOSE!). This is likely done so that developers can pass direct path etc. to things like FFmpeg.
+
+However, for consuming non-media files from your users' devices, you need to use [Storage Access Framework](https://developer.android.com/guide/topics/providers/document-provider) file picker & that's the only option here. If you want to use some non-media file in some native library which only accepts file paths, caching it to local app directory (after reading through content-resolver stream) & then using it's path is your only option. _Not something I needed._
+
+I delegated my methods or API usages to use [Storage Access Framework](https://developer.android.com/guide/topics/providers/document-provider) & [MediaStore](https://developer.android.com/reference/android/provider/MediaStore) wherever it was necessary. It took time to refactor my code, but not that much _as I anticipated initially_. This process made me much familiar with the new Android storage requirements & practices, which will be useful for me in future.
+
 ## The Situation
 
 To begin with, first of all, I won't call myself an Android developer because I never target Android primarily from my codebase. I'm instead a [Flutter](http://flutter.dev/) developer, a specialized framework which allows to build cross-platform applications from a single codebase, while leveraging native functionalities like permissions, notifications & media playback etc. through a mechanism we refer as [platform channels](https://docs.flutter.dev/development/platform-integration/platform-channels).
