@@ -1,7 +1,7 @@
 ---
 slug: my-view-rust-cpp-linux-2022
 authors: alexmercerind
-title: My View: "My View: Rust, C++, Linux Kernel & 2022"
+title: "My View: Rust, C++, Linux Kernel & 2022"
 tags: [rust, linux, linux-kernel, cpp, c, 2022, windows]
 ---
 
