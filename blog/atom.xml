@@ -2,11 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://alexmercerind.com/blog</id>
     <title>alexmercerind Blog</title>
-    <updated>2022-09-01T00:00:00.000Z</updated>
+    <updated>2022-10-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://alexmercerind.com/blog"/>
     <subtitle>alexmercerind Blog</subtitle>
     <icon>https://alexmercerind.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[My View: Rust, C++, Linux Kernel & 2022]]></title>
+        <id>my-view-rust-cpp-linux-2022</id>
+        <link href="https://alexmercerind.com/blog/my-view-rust-cpp-linux-2022"/>
+        <updated>2022-10-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Rust is actually good, safer code better warnings.]]></summary>
+        <author>
+            <name>Hitesh</name>
+            <uri>https://github.com/alexmercerind</uri>
+        </author>
+        <category label="rust" term="rust"/>
+        <category label="linux" term="linux"/>
+        <category label="linux-kernel" term="linux-kernel"/>
+        <category label="cpp" term="cpp"/>
+        <category label="c" term="c"/>
+        <category label="2022" term="2022"/>
+        <category label="windows" term="windows"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Messed up storage access since Android 11]]></title>
         <id>messed-up-storage-access-since-android-11</id>

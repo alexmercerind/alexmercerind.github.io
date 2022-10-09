@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkalexmercerind_github_io=self.webpackChunkalexmercerind_github_io||[]).push([[6263],{4129:e=>{e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/2022","name":"2022","count":1,"permalink":"/blog/tags/2022"}')}}]);

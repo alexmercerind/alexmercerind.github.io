@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkalexmercerind_github_io=self.webpackChunkalexmercerind_github_io||[]).push([[8903],{1621:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/c","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

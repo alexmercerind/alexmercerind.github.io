@@ -4,9 +4,23 @@
         <title>alexmercerind Blog</title>
         <link>https://alexmercerind.com/blog</link>
         <description>alexmercerind Blog</description>
-        <lastBuildDate>Thu, 01 Sep 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 09 Oct 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[My View: Rust, C++, Linux Kernel & 2022]]></title>
+            <link>https://alexmercerind.com/blog/my-view-rust-cpp-linux-2022</link>
+            <guid>my-view-rust-cpp-linux-2022</guid>
+            <pubDate>Sun, 09 Oct 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Rust is actually good, safer code better warnings.]]></description>
+            <category>rust</category>
+            <category>linux</category>
+            <category>linux-kernel</category>
+            <category>cpp</category>
+            <category>c</category>
+            <category>2022</category>
+            <category>windows</category>
+        </item>
         <item>
             <title><![CDATA[Messed up storage access since Android 11]]></title>
             <link>https://alexmercerind.com/blog/messed-up-storage-access-since-android-11</link>
