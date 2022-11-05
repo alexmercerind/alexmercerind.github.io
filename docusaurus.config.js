@@ -120,7 +120,7 @@ const config = {
             position: "right",
           },
           {
-            href: "https://www.linkedin.com/hitesh-kumar-saini",
+            href: "https://www.linkedin.com/in/hitesh-kumar-saini",
             className: "header-linkedin-link",
             position: "right",
           },
