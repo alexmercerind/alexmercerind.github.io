@@ -34,7 +34,7 @@ export default function Home() {
             maintainer={"alexmercerind"}
             description={"Flutter audio/video playback, broadcast & recording library for Windows, Linux & macOS with playlist control. Native C/C++ & libvlc."}
             repository={"dart_vlc"}
-            extraLanguages={["C++"]}
+            extraLanguages={["C++", "Dart"]}
 
           />
         </div>
@@ -46,7 +46,7 @@ export default function Home() {
             maintainer={"alexmercerind"}
             description={"Flutter library for window acrylic, mica & transparency effects (Windows, macOS & Linux)."}
             repository={"flutter_acrylic"}
-            extraLanguages={["Dart"]}
+            extraLanguages={["C++", "Dart"]}
 
           />
         </div>

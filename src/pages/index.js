@@ -107,7 +107,7 @@ export default function Home() {
             require('@site/static/img/dart_vlc/0.webp').default,
             require('@site/static/img/dart_vlc/1.webp').default,
           ]}
-          extraLanguages={["C++"]}
+          extraLanguages={["C++", "Dart"]}
           achievements={[
             "First ever media playback library for Flutter and Dart apps on Windows, Linux & macOS.",
             "Features a C++ wrapper around libVLC.",
@@ -127,7 +127,7 @@ export default function Home() {
           images={[
             require("@site/static/img/flutter_acrylic.jpg").default,
           ]}
-          extraLanguages={["Dart"]}
+          extraLanguages={["C++", "Dart"]}
           achievements={[
             "Window acrylic, mica & transparency effects on Windows, macOS & Linux.",
             "Uses new DwmSetWindowAttribute API on modern Windows 11 versions & undocumented SetWindowCompositionAttribute API on previous Windows versions (founded by Rafael Rivera).",
