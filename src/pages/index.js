@@ -108,10 +108,10 @@ export default function Home() {
           ]}
           extraLanguages={["C++"]}
           achievements={[
-            "First ever media playback library for Flutter and Dart apps on Windows, Linux & macOS.",
-            "I wrote a C++ based wrapper around libVLC++ & libVLC.",
-            "Uses FFI & dart_api.h for calling libVLC APIs & platform channels for texture registrar APIs.",
-            "Most libVLC APIs are exposed to Dart in a nice high-level style.",
+            "I wrote a C++ based wrapper around libVLC++ & libVLC to power this Flutter library.",
+            "I used FFI & dart_api.h for native interop & platform channels for texture registrar APIs from Flutter.",
+            "This was the first ever media playback library for Flutter and Dart apps on Windows, Linux & macOS.",            
+            "I have exposed most libVLC APIs to Dart in a nice high-level abstraction.",
           ]}
         />
         <Project
