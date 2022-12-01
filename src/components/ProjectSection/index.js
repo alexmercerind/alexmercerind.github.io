@@ -64,22 +64,31 @@ export default function ProjectSection({ index, title, description, maintainer, 
       </div>
     </div> : null}
     <div className={styles.languageBar}>
-      {
-        extraLanguages.map((language) => {
+      {[...new Set([...extraLanguages, ...[repositoryJSON?.language]])].map(
+        (language) => {
           return (
-            <div key={language} style={{ "display": "flex", "flexDirection": "row", "alignItems": "center" }}>
-              <div style={{ borderRadius: "50%", marginRight: 8, height: 16, width: 16, backgroundColor: kLanguageColors[language] }}></div>
-              <div className={styles.iconLabel}>
-                {language}
-              </div>
+            <div
+              key={language}
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  borderRadius: "50%",
+                  marginRight: 8,
+                  height: 16,
+                  width: 16,
+                  backgroundColor: kLanguageColors[language],
+                }}
+              ></div>
+              <div className={styles.iconLabel}>{language}</div>
             </div>
           );
-        })
-      }
-      <div style={{ borderRadius: "50%", marginRight: 8, height: 16, width: 16, backgroundColor: kLanguageColors[repositoryJSON?.language] }}></div>
-      <div className={styles.iconLabel}>
-        {repositoryJSON?.language}
-      </div>
+        }
+      )}
     </div>
   </div>
 }
