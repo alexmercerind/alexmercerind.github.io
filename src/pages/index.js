@@ -81,22 +81,23 @@ export default function Home() {
           ]}
           extraLanguages={["Dart", "C"]}
           achievements={[
-            "I made this in Flutter / Dart & very strictly follows Material Design animation & UI guidelines.",
-            "Indexes & updates music into albums, artists, genres based on metadata tags. Capable of indexing 50 songs/second & future caching.",
-            "mpv based music playback for strong format support (on Linux & Windows) using dart:ffi.",
-            "Taskbar controls, context-menu integration & System Media Transport Controls for Windows.",
+            "Written in Flutter / Dart & very strictly follows Material Design animation & UI guidelines.",
+            "Indexes & updates music into albums, artists, genres based on metadata tags. Capable of indexing 30+ songs/second & future caching.",
+            "Uses libmpv for media playback on Windows & Linux using dart:ffi.",
+            "Supports taskbar controls, context-menu integration & System Media Transport Controls on Windows.",
             "Pitch shifting, speed change, .lrc lyrics support, volume boost, Discord RPC, gapless playback.",
             "YouTube support, MPRIS controls for Linux & more.",
-            "I worked hard to make project work on all 3 platforms, Windows, Linux & Android.",
-            "I used Provider for state management & code has singletons at places.",
-            "Internally used packages & plugins are unit tested. Has over ~40k downloads combining Windows, Linux & Android."
+            "Supports all 3 major platforms Windows, Linux & Android.",
+            "Provider is used for state management.",
+            "Internally used packages & plugins are well unit-tested.",
+            "Has over ~40k downloads (combining all platforms) & many daily active users."
           ]}
         />
         <Project
           index={1}
           maintainer={"alexmercerind"}
           repository={"dart_vlc"}
-          description="Flutter audio/video playback, broadcast &amp; recording library for Windows, Linux &amp; macOS with playlist control. Native C/C++ &amp; libvlc."
+          description="Flutter audio / video playback, broadcast & recording library for Windows & Linux. Based on libvlc."
           links={{
             "pub.dev": "https://pub.dev/packages/dart_vlc",
             "VideoLAN retweet": "https://twitter.com/videolan/status/1371774126080286722",
@@ -108,10 +109,10 @@ export default function Home() {
           ]}
           extraLanguages={["C++"]}
           achievements={[
-            "I wrote a C++ based wrapper around libVLC++ & libVLC to power this Flutter library.",
-            "I used FFI & dart_api.h for native interop & platform channels for texture registrar APIs from Flutter.",
-            "This was the first ever media playback library for Flutter and Dart apps on Windows, Linux & macOS.",            
-            "I have exposed most libVLC APIs to Dart in a nice high-level abstraction.",
+            "First ever media playback library for Flutter and Dart apps on Windows, Linux & macOS.",
+            "Features a C++ wrapper around libVLC.",
+            "Uses FFI & dart_api.h for native-interop & platform channels for accessing texture registrar APIs.",
+            "Most libVLC APIs are exposed to Dart in a nice high-level abstraction.",
           ]}
         />
         <Project
