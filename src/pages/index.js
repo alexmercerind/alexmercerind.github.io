@@ -71,11 +71,10 @@ export default function Home() {
             "Google Play (recently published)": "https://play.google.com/store/apps/details?id=com.alexmercerind.harmonoid",
           }}
           images={[
-            "https://github.com/harmonoid/harmonoid/blob/assets/windows/0.webp?raw=true",
-            "https://github.com/harmonoid/harmonoid/blob/assets/windows/1.webp?raw=true",
-            "https://github.com/harmonoid/harmonoid/blob/assets/windows/2.webp?raw=true",
-            "https://github.com/harmonoid/harmonoid/blob/assets/windows/3.webp?raw=true",
-            "https://github.com/harmonoid/harmonoid/blob/assets/windows/4.webp?raw=true",
+            "https://github.com/harmonoid/harmonoid/blob/assets/win32/0.webp?raw=true",
+            "https://github.com/harmonoid/harmonoid/blob/assets/win32/1.webp?raw=true",
+            "https://github.com/harmonoid/harmonoid/blob/assets/win32/2.webp?raw=true",
+            "https://github.com/harmonoid/harmonoid/blob/assets/win32/3.webp?raw=true",
           ]}
           extraLanguages={["Dart", "C"]}
           achievements={[
