@@ -14,8 +14,6 @@ function HomepageHeader() {
     <header className={clsx("hero hero--primary", styles.hero)}>
       <div className={styles.header}>
         <div className={styles.infobar}>
-          <div className={styles.tooltip}>Here for the projects? Jump to the <a className={styles.jump} onClick={() => document.getElementById("projects").scrollIntoView({ "behavior": "smooth" })}>Projects</a>.</div>
-          <div className={styles.tooltip}>Here for the libraries' docs? Go to the <Link className={styles.jump} to="/docs">Docs</Link>.</div>
         </div>
         <div className={styles.row}>
           <div className={styles.profile}>
