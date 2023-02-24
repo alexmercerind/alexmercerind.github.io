@@ -32,13 +32,7 @@ const config = {
       "classic",
       /** @type {import("@docusaurus/preset-classic").Options} */
       ({
-        // docs: {
-        // editUrl: ({ versionDocsDirPath, docPath }) =>
-        //   `https://github.com/alexmercerind/alexmercerind.github.io/edit/master/docs/${docPath}`,
-        // breadcrumbs: false,
-        // sidebarCollapsed: true,
-        // sidebarPath: require.resolve("./sidebars.js"),
-        // },
+        docs: false,
         blog: {
           showReadingTime: true,
         },
